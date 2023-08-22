@@ -1,10 +1,10 @@
 # computer_12
 
 A new Flutter project.
-Screenshot of DigitalNote Application
-![logo](https://github.com/Nishan-Pradhan06/Flutter_DigitalNote/blob/master/screenshots/img1.png)
-![logo](https://github.com/Nishan-Pradhan06/Flutter_DigitalNote/blob/master/screenshots/img2.png)
-![logo](https://github.com/Nishan-Pradhan06/Flutter_DigitalNote/blob/master/screenshots/img3.png)
+
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

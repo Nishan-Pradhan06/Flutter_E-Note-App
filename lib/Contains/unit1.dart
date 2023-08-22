@@ -54,8 +54,7 @@ class _DataBaseState extends State<DataBase> {
           title: const Text(
             'Database',
             style: TextStyle(
-              fontFamily: 'Ubuntu',
-            ),
+                color: Colors.white, fontFamily: 'Ubuntu', fontSize: 28),
           ),
         ),
         body: CupertinoScrollbar(

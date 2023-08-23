@@ -1,3 +1,4 @@
+import 'package:computer_12/strings/string_unit2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -36,6 +37,23 @@ class _OoPState extends State<OoP> {
     _bannerAd.load();
   }
 
+  //defining the textstyle
+  var headlineText = const TextStyle(
+    fontSize: 21.0,
+    decoration: TextDecoration.underline,
+    fontWeight: FontWeight.bold,
+  );
+
+  var pragraphStyleText = const TextStyle(
+    color: Colors.black,
+    fontSize: 17.0,
+  );
+  var pointStyleText = const TextStyle(
+    color: Colors.black,
+    fontWeight: FontWeight.bold,
+    fontSize: 17.0,
+  );
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -44,7 +62,7 @@ class _OoPState extends State<OoP> {
           elevation: 25.0,
           backgroundColor: const Color.fromARGB(255, 40, 103, 103),
           centerTitle: true,
-          title: const Text('OOP'),
+          title: Text(titleText),
         ),
         body: PageView(
           children: [
@@ -60,22 +78,21 @@ class _OoPState extends State<OoP> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
-                          const Padding(
-                            padding: EdgeInsets.all(2.0),
+                          Padding(
+                            padding: const EdgeInsets.all(2.0),
                             child: Text(
-                              'Unit 5',
+                              topics,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 24.0,
+                              style: const TextStyle(
+                                fontSize: 2.0,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: 'ubuntu',
                               ),
                             ),
                           ),
-                          const Text(
-                            'Sources: Buddha Publication Pvt. Ltd.',
+                          Text(
+                            sources,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 14.0,
                               fontStyle: FontStyle.italic,
                             ),

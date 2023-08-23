@@ -64,6 +64,7 @@ class _NavDrawerState extends State<NavDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      // width: MediaQuery.of(context).size.width,
       elevation: 5.0,
       child: ListView(
         padding: EdgeInsets.zero,

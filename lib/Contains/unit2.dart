@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-import '../strings/unit1.dart';
+import '../strings/string_unit2.dart';
 
 class NetWork extends StatefulWidget {
   const NetWork({Key? key}) : super(key: key);
@@ -65,8 +65,9 @@ class _NetWorkState extends State<NetWork> {
           elevation: 25.0,
           backgroundColor: const Color.fromARGB(255, 40, 103, 103),
           centerTitle: true,
-          title: const Text(
-            'Data Communication and Networking',
+          title: Text(
+            titleText,
+            style: const TextStyle(fontSize: 30, color: Colors.white),
           ),
         ),
         body: PageView(
@@ -89,7 +90,7 @@ class _NetWorkState extends State<NetWork> {
                               topics,
                               textAlign: TextAlign.center,
                               style: const TextStyle(
-                                fontSize: 24.0,
+                                fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -122,26 +123,21 @@ class _NetWorkState extends State<NetWork> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Types of data communicatin mode',
+                          Text(
+                            headline2,
                             textAlign: TextAlign.start,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: headlineText,
                           ),
                           const SizedBox(
                             height: 6.0,
                           ),
                           SelectableText(
-                            "There are three types of data communication modes which are given below: -\ni) Simplex\nii) Half-Duplex\niii) Full-Duplex",
+                            pragraph2,
                             style: pragraphStyleText,
                           ),
                           const SizedBox(
                             height: 20.0,
                           ),
-
                           Text(
                             point1,
                             style: pointStyleText,
@@ -152,49 +148,27 @@ class _NetWorkState extends State<NetWork> {
                             style: pragraphStyleText,
                           ),
                           Image.asset("images/unit_2/simplex.jpg"),
-                          const Text(
-                            'Simples Only A to B',
+                          Text(
+                            exmaple1,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                              fontFamily: 'ubuntu',
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text(
-                            'Fig:- Simplex Communication',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                              fontFamily: 'ubuntu',
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: pragraphStyleText,
                           ),
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            '2.Half-Duplex',
-                            textAlign: TextAlign.left,
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 17.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
+                          Text(
+                            point2,
+                            style: headlineText,
                           ),
-                          const SelectableText(
-                            "In Half-Fuplex mode, each station can both transmit and receive is sending, the other can only receive, anmd vice versa. In this mode, the entire capacity of a channel is taken over by whichever of teo deveices is transmittnig at the time. Wakie-Talkie is the best example of half-duplex system.",
+
+                          SelectableText(
+                            point2Explanations,
                             textAlign: TextAlign.justify,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                            ),
+                            style: pragraphStyleText,
                           ),
                           Image.asset("images/unit_2/half-duplex.jpg"),
                           const Text(
-                            'Half-Duplex A to B or B to A',
+                            '',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontFamily: 'ubuntu',
@@ -202,55 +176,32 @@ class _NetWorkState extends State<NetWork> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const Text(
-                            'Fig:- Half-Duplex Communication',
+                          Text(
+                            example2,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
-                            ),
+                            style: pragraphStyleText,
                           ),
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            '3.Full-Duplex',
+                          Text(
+                            point3,
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 17.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
+                            style: headlineText,
                           ),
-                          const SelectableText(
-                            "In the Full-Duplex mode, both stations can transmit and receive simultaneously. This mde is like a two way traffic flowing in both directions at the same time. Here, signals going in either direction share the capacity of the link. Telephone network, online chatting are the example of full-duplex.",
+                          SelectableText(
+                            point3Explanations,
                             textAlign: TextAlign.justify,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                            ),
+                            style: pragraphStyleText,
                           ),
                           Image.asset("images/unit_2/full-duplex.jpg"),
-                          const Text(
-                            'Transmission in both directions simultaneously',
+                          Text(
+                            example3,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
-                            ),
+                            style: pragraphStyleText,
                           ),
-                          const Text(
-                            'Fig:- Full-Duplex Communication',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'ubuntu'),
-                          ),
+
                           const SizedBox(
                             height: 20.0,
                           ),

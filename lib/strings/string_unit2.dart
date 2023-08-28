@@ -28,3 +28,10 @@ String example2 ="Half-Duplex A to B or B to A\nFig:- Half-Duplex Communication"
 String point3 = '3.Full-Duplex';
 String point3Explanations = "In the Full-Duplex mode, both stations can transmit and receive simultaneously. This mde is like a two way traffic flowing in both directions at the same time. Here, signals going in either direction share the capacity of the link. Telephone network, online chatting are the example of full-duplex.";
 String example3 ='Transmission in both directions simultaneously \nFig:- Full duplex communication';
+
+String headline3 = 'Computer Network';
+String pragraph3 ="Computer Network is defined as the interconnection of two or more computers or networking devices with the help of transmission media and set of protocols.";
+
+String h4= 'Merits of Computer Network';
+String p4 ='a. Sharing Resource';
+String p5= "Hardware resources such as processor, storage devices, printers, scanner etc can be shared among us using computer network. It hepls to minimize the operational cost of an organization. Similarly software can be shared among us within a network.";

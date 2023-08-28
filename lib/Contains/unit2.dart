@@ -205,78 +205,50 @@ class _NetWorkState extends State<NetWork> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Computer Network',
-                            textAlign: TextAlign.left,
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
+                          Text(
+                            headline3,
+                            style: headlineText,
                           ),
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const SelectableText(
-                            "Computer Network is defined as the interconnection of two or more computers or networking devices with the help of transmission media and set of protocols.",
+                          SelectableText(
+                            pragraph3,
                             textAlign: TextAlign.justify,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                            ),
+                            style: pragraphStyleText,
                           ),
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Merits of Computer Network',
+                          Text(
+                            h4,
                             textAlign: TextAlign.left,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
+                            style: headlineText,
                           ),
+
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const Text(
-                            'a. Sharing Resource',
+                          Text(
+                            p4,
                             textAlign: TextAlign.left,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 17.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
+                            style: pointStyleText,
                           ),
+
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const SelectableText(
-                            "Hardware resources such as processor, storage devices, printers, scanner etc can be shared among us using computer network. It hepls to minimize the operational cost of an organization. Similarly software can be shared among us within a network.",
+                          SelectableText(
+                            p5,
                             textAlign: TextAlign.justify,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                            ),
+                            style: pragraphStyleText,
                           ),
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const Text(
+                          Text(
                             'b. Faster and cheaper communication',
-                            textAlign: TextAlign.left,
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 17.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
+                            style: pointStyleText,
                           ),
                           const SizedBox(
                             height: 6.0,

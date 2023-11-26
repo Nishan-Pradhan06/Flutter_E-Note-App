@@ -54,24 +54,24 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/
-    # - images/eg1.jpg
-    # - images/loading.json
-    # - images/icon_logo_app.png
-    # - images/unit_1/data_dbms.jpg
-    # - images/unit_1/eg222.jpg
-    # - images/unit_1/eg.3.png
-    # - images/unit_1/eg4.png
-    # - images/unit_1/eg5.png
-    # - images/unit_1/eg6.png
-    # - images/unit_2/simplex.jpg
-    # - images/unit_2/half-duplex.jpg
-    # - images/unit_2/full-duplex.jpg
-    # - images/unit_2/internet_intranet.jpg
-    # - images/unit_4/eg_1.png
-    # - images/unit_5/eg11.png
-    # - images/unit_5/eg22.png
-    # - images/unit_6/software_develop.png
-    # - images/unit_6/component_system.png
+    - images/eg1.jpg
+    - images/loading.json
+    - images/icon_logo_app.png
+    - images/unit_1/data_dbms.jpg
+    - images/unit_1/eg222.jpg
+    - images/unit_1/eg.3.png
+    - images/unit_1/eg4.png
+    - images/unit_1/eg5.png
+    - images/unit_1/eg6.png
+    - images/unit_2/simplex.jpg
+    - images/unit_2/half-duplex.jpg
+    - images/unit_2/full-duplex.jpg
+    - images/unit_2/internet_intranet.jpg
+    - images/unit_4/eg_1.png
+    - images/unit_5/eg11.png
+    - images/unit_5/eg22.png
+    - images/unit_6/software_develop.png
+    - images/unit_6/component_system.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,6 +1,6 @@
 # computer_12
 
-# DigitalNote Flutter App
+# E-Note-App Flutter App
 
 This is a simple enote app built using Flutter, providing all the note of computer science grade 12.
 
@@ -11,7 +11,7 @@ To run this project, ensure that you have Flutter installed. If you haven't inst
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/calculator-flutter.git
+   git clone https://github.com/Nishan-Pradhan06/Flutter_E-Note-App.git
 2. 
    ```bash
    flutter pub get

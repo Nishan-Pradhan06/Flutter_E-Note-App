@@ -11,7 +11,7 @@ import 'package:computer_12/Contains/unit7.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class TopicsList extends StatelessWidget {
-  TopicsList({Key? key}) : super(key: key) {
+  TopicsList({super.key}) {
     _initAd();
   }
   ////

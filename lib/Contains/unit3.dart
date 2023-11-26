@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class WebDevelopment extends StatefulWidget {
-  const WebDevelopment({Key? key}) : super(key: key);
+  const WebDevelopment({super.key});
 
   @override
   State<WebDevelopment> createState() => _WebDevelopmentState();

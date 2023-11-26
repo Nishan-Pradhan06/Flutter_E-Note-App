@@ -7,7 +7,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../strings/string_unit2.dart';
 
 class NetWork extends StatefulWidget {
-  const NetWork({Key? key}) : super(key: key);
+  const NetWork({super.key});
 
   @override
   State<NetWork> createState() => _NetWorkState();

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class OoP extends StatefulWidget {
-  const OoP({Key? key}) : super(key: key);
+  const OoP({super.key});
 
   @override
   State<OoP> createState() => _OoPState();

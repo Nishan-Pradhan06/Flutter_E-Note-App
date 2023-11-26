@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Qn extends StatelessWidget {
-  const Qn({Key? key}) : super(key: key);
+  const Qn({super.key});
 
   @override
   Widget build(BuildContext context) {

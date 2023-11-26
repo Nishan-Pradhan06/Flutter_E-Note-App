@@ -4,7 +4,7 @@ import 'package:bulleted_list/bulleted_list.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class DataBase extends StatefulWidget {
-  const DataBase({Key? key}) : super(key: key);
+  const DataBase({super.key});
 
   @override
   State<DataBase> createState() => _DataBaseState();

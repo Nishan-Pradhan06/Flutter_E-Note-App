@@ -4,7 +4,7 @@ import 'package:computer_12/topics/topics.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class ActionButton extends StatefulWidget {
-  const ActionButton({Key? key}) : super(key: key);
+  const ActionButton({super.key});
 
   @override
   State<ActionButton> createState() => _ActionButtonState();

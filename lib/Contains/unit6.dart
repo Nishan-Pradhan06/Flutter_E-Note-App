@@ -7,7 +7,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SpM extends StatefulWidget {
-  const SpM({Key? key}) : super(key: key);
+  const SpM({super.key});
 
   @override
   State<SpM> createState() => _SpMState();

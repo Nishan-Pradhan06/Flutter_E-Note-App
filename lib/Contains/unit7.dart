@@ -5,7 +5,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TechNology extends StatefulWidget {
-  const TechNology({Key? key}) : super(key: key);
+  const TechNology({super.key});
 
   @override
   State<TechNology> createState() => _TechNologyState();

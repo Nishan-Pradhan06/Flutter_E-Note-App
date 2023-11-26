@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class ProgrammingC extends StatefulWidget {
-  const ProgrammingC({Key? key}) : super(key: key);
+  const ProgrammingC({super.key});
 
   @override
   State<ProgrammingC> createState() => _ProgrammingCState();

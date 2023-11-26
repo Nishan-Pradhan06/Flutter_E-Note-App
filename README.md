@@ -2,8 +2,9 @@
 
 # E-Note-App Flutter App
 
-This is a simple enote app built using Flutter, providing all the note of computer science grade 12.
-[you can live preview demo of app](https://appetize.io/app/tgnvwn2pj2iqg4jxpvnr4zdh4i?device=pixel7pro&osVersion=13.0)
+This is a simple enote app built using Flutter, providing all the note of computer science grade 12.<br>
+Click on this link to preview the app.<br>
+[Live Preview Demo](https://appetize.io/app/tgnvwn2pj2iqg4jxpvnr4zdh4i?device=pixel7pro&osVersion=13.0)
 ## Installation
 
 To run this project, ensure that you have Flutter installed. If you haven't installed Flutter yet, please follow the [official installation guide](https://flutter.dev/docs/get-started/install).

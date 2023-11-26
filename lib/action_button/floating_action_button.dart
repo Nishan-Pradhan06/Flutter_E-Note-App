@@ -40,48 +40,37 @@ class _ActionButtonState extends State<ActionButton> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        if (isDialOpen.value) {
-          isDialOpen.value = false;
-          return false;
-        } else {
-          return true;
-        }
-      },
-      ////title
-      child: Scaffold(
-        appBar: AppBar(
-          elevation: 40.0,
-          backgroundColor: const Color.fromARGB(255, 17, 65, 65),
-          centerTitle: true,
-          title: const Text(
-            'Computer Science',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 25.0,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Ubuntu',
-            ),
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 40.0,
+        backgroundColor: const Color.fromARGB(255, 17, 65, 65),
+        centerTitle: true,
+        title: const Text(
+          'Computer Science',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 25.0,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Ubuntu',
           ),
         ),
-
-        body: SizedBox(
-          child: TopicsList(),
-        ),
-        backgroundColor: const Color.fromARGB(130, 173, 223, 241),
-
-        ///banner advertisment
-        bottomNavigationBar: _isAdLoaded
-            // ignore: sized_box_for_whitespace
-            ? Container(
-                height: _bannerAd.size.height.toDouble(),
-                width: _bannerAd.size.width.toDouble(),
-                child: AdWidget(ad: _bannerAd),
-              )
-            : const SizedBox(),
-        drawer: const NavDrawer(),
       ),
+
+      body: SizedBox(
+        child: TopicsList(),
+      ),
+      backgroundColor: const Color.fromARGB(130, 173, 223, 241),
+
+      ///banner advertisment
+      bottomNavigationBar: _isAdLoaded
+          // ignore: sized_box_for_whitespace
+          ? Container(
+              height: _bannerAd.size.height.toDouble(),
+              width: _bannerAd.size.width.toDouble(),
+              child: AdWidget(ad: _bannerAd),
+            )
+          : const SizedBox(),
+      drawer: const NavDrawer(),
     );
   }
 }

@@ -5,6 +5,7 @@ Welcome to the Computer Science Grade 12 E-Note-App, a Flutter-based application
 ## Live Preview Demo
 
 Experience the app firsthand by clicking on the following link: [Live Preview Demo](https://appetize.io/app/tgnvwn2pj2iqg4jxpvnr4zdh4i?device=pixel7pro&osVersion=13.0)
+![project-6](https://github.com/Nishan-Pradhan06/Flutter_E-Note-App/assets/105001135/8815dd17-efc0-41c1-b1db-bdb6bcf4b18e)
 
 ## Installation Guide
 

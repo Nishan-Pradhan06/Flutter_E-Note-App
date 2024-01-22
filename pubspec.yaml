@@ -37,6 +37,8 @@ dependencies:
   google_mobile_ads: ^3.1.0
   url_launcher: ^6.1.5
   highlight_text: ^1.4.1
+  flutter_social_button: ^1.1.4+1
+  font_awesome_flutter: ^10.6.0
 
 dev_dependencies:
   flutter_test:

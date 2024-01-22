@@ -6,6 +6,8 @@ import 'package:share/share.dart';
 import 'package:rating_dialog/rating_dialog.dart';
 // import 'package:computer_12/topics/topics.dart';
 // import 'package:computer_12/action_button/floating_action_button.dart';
+// import 'package:flutter_social_button/flutter_social_button.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 //slide nav bar drawer
 class NavDrawer extends StatefulWidget {
@@ -24,38 +26,41 @@ class _NavDrawerState extends State<NavDrawer> {
       builder: (context) {
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 0.2),
-          child: RatingDialog(
-            initialRating: 1.0,
-            title: const Text(
-              'Rate Us',
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: true),
-              softWrap: true,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            message: const Text(
-              'Tap a star to set your rating. Add more description here if you want.',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14),
-            ),
-            image: Image.asset(
-              "images/icon_logo_app.png",
-              height: 100.0,
-              width: 100,
-            ),
-            starSize: 25,
-            submitButtonText: 'Submit',
-            commentHint: 'Tell Us Your Comments',
-            onCancelled: () => print('cancelled'),
-            onSubmitted: (response) {
-              print('rating:${response.rating},comment:${response.comment}');
-            },
-          ),
+          child: rateDilogPopUp(),
         );
+      },
+    );
+  }
+
+  RatingDialog rateDilogPopUp() {
+    return RatingDialog(
+      initialRating: 1.0,
+      title: const Text(
+        'Rate Us',
+        textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: true),
+        softWrap: true,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      message: const Text(
+        'Tap a star to set your rating. Add more description here if you want.',
+        textAlign: TextAlign.center,
+        style: TextStyle(fontSize: 14),
+      ),
+      image: Image.asset(
+        "images/icon_logo_app.png",
+        height: 100.0,
+        width: 100,
+      ),
+      starSize: 25,
+      submitButtonText: 'Submit',
+      commentHint: 'Tell Us Your Comments',
+      onCancelled: () => print('cancelled'),
+      onSubmitted: (response) {
+        print('rating:${response.rating},comment:${response.comment}');
       },
     );
   }
@@ -208,6 +213,46 @@ class _NavDrawerState extends State<NavDrawer> {
               },
             ),
           ),
+
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 2.7,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const Divider(
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                        icon: const FaIcon(
+                          FontAwesomeIcons.facebook,
+                          color: Colors.blue,
+                        ),
+                        onPressed: () {
+                          print("Pressed");
+                        }),
+                    IconButton(
+                      icon: const FaIcon(
+                        FontAwesomeIcons.github,
+                      ),
+                      onPressed: () {
+                        print("Pressed Github");
+                      },
+                    ),
+                    IconButton(
+                      icon: const FaIcon(FontAwesomeIcons.instagram),
+                      onPressed: () {
+                        print("Pressed");
+                      },
+                    ),
+                  ],
+                )
+              ],
+            ),
+          )
         ],
       ),
     );

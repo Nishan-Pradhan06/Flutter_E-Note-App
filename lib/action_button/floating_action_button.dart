@@ -55,8 +55,7 @@ class _ActionButtonState extends State<ActionButton> {
           ),
         ),
       ),
-
-      body: SizedBox(
+      body: const SizedBox(
         child: TopicsList(),
       ),
       backgroundColor: const Color.fromARGB(130, 173, 223, 241),

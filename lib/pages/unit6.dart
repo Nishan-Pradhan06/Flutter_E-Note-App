@@ -118,12 +118,12 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
-                              contents:
-                                  "It involves capturing and assembling element that enter the system to be processed. For eg, the input to a calculator is the keypad. We press keys and the keypad sends an electric signal to be processed. "),
+                            contents:
+                                "It involves capturing and assembling element that enter the system to be processed. For eg, the input to a calculator is the keypad. We press keys and the keypad sends an electric signal to be processed. ",
+                          ),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -134,7 +134,6 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -150,7 +149,6 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -167,7 +165,6 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -177,7 +174,7 @@ class _SpMState extends State<SpM> {
                             height: 6.0,
                           ),
                           const Text(
-                            '5.Controlling:                                                                                                                   ',
+                            '5.Controlling:',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
@@ -194,14 +191,13 @@ class _SpMState extends State<SpM> {
                             height: 6.0,
                           ),
                           const Text(
-                            '6.Feed back:                                                                                                                   ',
+                            '6.Feed back:',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -221,7 +217,6 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -234,14 +229,13 @@ class _SpMState extends State<SpM> {
                             height: 6.0,
                           ),
                           const Text(
-                            '8.System Environment:                                                                                                                   ',
+                            '8.System Environment:',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -251,7 +245,7 @@ class _SpMState extends State<SpM> {
                             height: 20.0,
                           ),
                           const Text(
-                            "System Development Life Cycle (SDLC)                                                                                                                                ",
+                            "System Development Life Cycle (SDLC)",
                             textAlign: TextAlign.start,
                             style: TextStyle(
                               fontSize: 21.0,
@@ -259,8 +253,7 @@ class _SpMState extends State<SpM> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Image.asset("images/unit_6/software_develop.png",
-                              height: 120),
+                          Image.asset("images/unit_6/software_develop.png"),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -271,14 +264,13 @@ class _SpMState extends State<SpM> {
                             height: 6.0,
                           ),
                           const Text(
-                            '1) System investigation:                                                                                                                    ',
+                            '1) System investigation:',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -288,14 +280,13 @@ class _SpMState extends State<SpM> {
                             height: 6.0,
                           ),
                           const Text(
-                            '2) System analysis:                                                                                                                     ',
+                            '2) System analysis:',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -305,14 +296,13 @@ class _SpMState extends State<SpM> {
                             height: 6.0,
                           ),
                           const Text(
-                            '3) Feasibility studies (V.imp):                                                                                                                     ',
+                            '3) Feasibility studies (V.imp):',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -329,21 +319,19 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
                             height: 6.0,
                           ),
                           const Text(
-                            'a) Economic feasibility:                                                                                                                    ',
+                            'a) Economic feasibility:',
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -359,7 +347,6 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -376,7 +363,6 @@ class _SpMState extends State<SpM> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           HeadingDetails(
@@ -471,18 +457,188 @@ class _SpMState extends State<SpM> {
                           const ChapterHeadingMedium(
                               medium_heading: 'A) The waterfall Model: '),
                           HeadingDetails(
-                              contents:
-                                  'This model is some time called classic life cycle because it suggest a systematic sequential approach to software development that begins with customer specification of requirements and progress through planning, modeling, construction etc. It is an oldest type of model for software engineering. It takes the fundamental process activities of specification, development, validation and evolution & represents them as separate process phases such as requirements specification, software design, implementation testing and so on.'),
-                          Image.asset("images/unit_6/sdlc.png", height: 350),
+                            contents:
+                                'This model is some time called classic life cycle because it suggest a systematic sequential approach to software development that begins with customer specification of requirements and progress through planning, modeling, construction etc. It is an oldest type of model for software engineering. It takes the fundamental process activities of specification, development, validation and evolution & represents them as separate process phases such as requirements specification, software design, implementation testing and so on.',
+                          ),
+                          Column(
+                            children: [
+                              Image.asset(
+                                "images/unit_6/sdlc.png",
+                              ),
+                              const Text('Fig:- Waterfall Model'),
+                            ],
+                          ),
                           const SizedBox(
                             height: 6.0,
                           ),
+                          const SizedBox(height: 6.0),
                           const ChapterHeadingMedium(
                               medium_heading:
                                   'a. Requirement analysis & definition:'),
                           HeadingDetails(
+                            contents:
+                                " In this stage the system's services constrain and goals are established by consultation with system users. They are  defined in details and serve as system specification.",
+                          ),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'b. System and software design:'),
+                          HeadingDetails(
                               contents:
-                                  " In this stage the system's services constrain and goals are established by consultation with system users. They are  defined in details and serve as system specification."),
+                                  'In this stage the system design process partition the requirements to either hardware or software system. It establishes overall system architecture. Software design involves identifying and describing the fundamental software system abstraction and their relationship.'),
+                          const ChapterHeadingMedium(
+                              medium_heading:
+                                  'c. Implementation and unit testing:'),
+                          HeadingDetails(
+                              contents:
+                                  'During this stage, the software design is realized as a set of programs or program unit testing involves verifying that each unit meets its specification.'),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading:
+                                  'd. Integration and system testing:'),
+                          HeadingDetails(
+                            contents:
+                                'Normally, this is the longest life cycle phase. The system is the installed and put into practical use, maintenance involves correcting errors which are not discovered in earlier stage of the life cycle improving the implementation of system units and enhancing the system service as a new requirements are discovered.',
+                          ),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'B) Prototyping Model:'),
+                          HeadingDetails(
+                            contents:
+                                "This model is applied when there is an absence of detail information regarding input and output requirement of a software. Prototype model is suitable when the requirement of the client is not clear and it is supposed to be changed. It doesn't cover any risk management.",
+                          ),
+
+                          ChapterTopics(heading: 'Development of prototype.'),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Identify user problem:'),
+                          HeadingDetails(
+                            contents:
+                                "The system analyst interviews the user to obtain an idea of what is required from the system.",
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Develop a prototype: '),
+                          HeadingDetails(
+                            contents:
+                                "The system analyst, working with other information specialist uses one or more prototyping tool to develop a prototype.",
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading:
+                                  'Determine if prototype is acceptable:'),
+                          HeadingDetails(
+                            contents:
+                                "The system analyst educates the user in prototype and provides an opportunity becoming familiar with the system. The user advises the analyst whether the prototype is satisfactory or not. If yes then the prototype will be used if not again the loop continues from beginning.",
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Use the prototype:'),
+                          HeadingDetails(
+                            contents:
+                                "The prototype becomes operational system.",
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading:
+                                  'Advantages of prototyping model'),
+                          HeadingDetails(
+                            contents:
+                                "1. Helps in reducing risk associated with the the project.\n2. There is great involvement of user in software development.",
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading:
+                                  'Disadvantages of prototyping model'),
+                          HeadingDetails(
+                            contents:
+                                "1. Time consuming and expensive because if the user is not satisfied by the developed prototype new prototype should be developed.\n2. This process goes on until a perfect prototype is developed which satisfies the user.",
+                          ),
+
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'C) Spiral model:'),
+                          HeadingDetails(
+                            contents:
+                                " In this model, process is represented as a spiral rather than a sequence of activities with back tracking. Each loop in the spiral represent a phase in the process. It has no fixed phase such a specification or design. Loops in the spiral are chosen depending upon what is required. This model combines the feature of both waterfall model and prototype model. The spiral model is favorable of large, expensive and complicated  projects. It is a system development method in Looping structure. In this model planning, risk analysis, software development and user evaluation are repeatedly processed until the system performed correct output.",
+                          ),
+                          Column(
+                            children: [
+                              Image.asset(
+                                "images/unit_6/sprialmodel.png",
+                              ),
+                              const Text('Fig:- Spiral Model')
+                            ],
+                          ),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Planning:'),
+                          HeadingDetails(
+                            contents:
+                                ' The project is reviewed and the decision is made whether to continue with a further loop of a spiral. If it is decided to continue, plan has to be drawn up for the next phase of the project.',
+                          ),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Risk analysis:'),
+                          HeadingDetails(
+                            contents:
+                                'For each of the identified project risk, detail analysis is carried out. Steps are taken to reduce the risk. For example: if there is a risk that the requirement are inappropriate, a prototype system may be developed.',
+                          ),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Software development: '),
+                          HeadingDetails(
+                            contents:
+                                'After risk evaluation a development model of the system is chosen.',
+                          ),
+                          const SizedBox(height: 6.0),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'User evaluation: '),
+                          HeadingDetails(
+                            contents:
+                                'Specific objective for the phase of the project are defined by the evolution of the user. Here, user requirement and the product are identified and checked whether it fulfills the specification or not.',
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Advantages of spiral model'),
+                          HeadingDetails(
+                            contents:
+                                '1. It emphasize on risk, which are often ignored.\n2. Some phases are in loop, it is effective for regular updates.3. Effective user feedback.4. It emphasize on quality.',
+                          ),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Disadvantage of spiral model'),
+                          HeadingDetails(
+                            contents:
+                                '1. Full scale risk analysis need training and maybe expensive. Hence, it is only applicable for large project.\n2. This model is relatively untested.',
+                          ),
+                          ChapterTopics(heading: 'System design tool'),
+                          HeadingDetails(
+                            contents:
+                                'Various system design tool are used during system analysis and design phase of system development. Some of the most commonly used tools are algorithm, flowchart, entity relationship (ER) diagram , data flow diagram (DFD) etc.',
+                          ),
+                          const ChapterHeadingMedium(
+                              medium_heading: '1) Algorithm:'),
+                          HeadingDetails(
+                              contents:
+                                  'The sequential steps or step by step procedure written to solve particular problem is called algorithm. It is one of the most basic tools used for solving problem. It is defined as the finite sequence of instruction for solving a problem. It consists of step wise list of English statement making sequential procedure. The number of instruction should be minimized to increase the speed of an algorithm.'),
+                          const ChapterHeadingMedium(
+                              medium_heading: '2) Flowchart:'),
+                          HeadingDetails(
+                            contents:
+                                'The pictorial or diagrammatic representation of steps involved while solving problem. It is defined as a diagram or picture which describe the procedure how to solve a problem. It shows the order of instruction and relationship between them. The purpose of constructing flowchart is to help the programmer for understanding the logic of the problem. There are two types of flow chart.',
+                          ),
+
+                          const ChapterHeadingMedium(
+                              medium_heading: 'Program Flowchart:'),
+                          HeadingDetails(
+                            contents:
+                                ' It is the type of flowchart that explains how a particular program solves a given tasks. It helps to get an understanding on how to solve the problem using the programs· Since it solves only one type of problem at a time, it is very easy to understand. ',
+                          ),
+                          const ChapterHeadingMedium(
+                              medium_heading: 'System flowchart:'),
+                          HeadingDetails(
+                            contents:
+                                'A system flowchart plays vital role in system analysis. It illustrates the elements graphically and characteristics of a system, its structure and relationship in terms of flowchart symbol. A system flowchart is a diagram that shows a broad overview of the data flow and sequences of operation in a system. It is the graphical representation of a sequence of activities in a process of a system.',
+                          ),
+                          const EndingText(),
                         ],
                       ),
                     ),

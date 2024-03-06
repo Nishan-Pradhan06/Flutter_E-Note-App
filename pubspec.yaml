@@ -14,9 +14,6 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  #multiple floating button
-  flutter_speed_dial: ^7.0.0
-
   # flutter_share: ^2.0.0
   share: ^2.0.4
   #rating dilogbox
@@ -28,7 +25,6 @@ dependencies:
   bulleted_list: ^0.0.1+0.1a
   google_mobile_ads: ^3.1.0
   url_launcher: ^6.1.5
-  font_awesome_flutter: ^10.6.0
 
 dev_dependencies:
   flutter_test:
@@ -44,25 +40,11 @@ flutter:
   assets:
     # - images/unit_6
     - images/
-    - images/eg1.jpg
-    - images/loading.json
-    - images/icon_logo_app.png
-    - images/unit_1/data_dbms.jpg
-    - images/unit_1/eg222.jpg
-    - images/unit_1/eg.3.png
-    - images/unit_1/eg4.png
-    - images/unit_1/eg5.png
-    - images/unit_1/eg6.png
-    - images/unit_2/simplex.jpg
-    - images/unit_2/half-duplex.jpg
-    - images/unit_2/full-duplex.jpg
-    - images/unit_2/internet_intranet.jpg
-    - images/unit_4/eg_1.png
-    - images/unit_5/eg11.png
-    - images/unit_5/eg22.png
-    - images/unit_6/software_develop.png
-    - images/unit_6/component_system.png
-    - images/unit_6/sdlc.png
+    - images/unit_1/
+    - images/unit_2/
+    - images/unit_4/
+    - images/unit_5/
+    - images/unit_6/
 
   fonts:
     - family: Poppins
@@ -70,8 +52,3 @@ flutter:
         - asset: fonts/Poppins-Regular.ttf
         # - asset: fonts/Schyler-Italic.ttf
     #         style: italic
-    - family: Ubuntu
-      fonts:
-        - asset: fonts/Ubuntu-Regular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700

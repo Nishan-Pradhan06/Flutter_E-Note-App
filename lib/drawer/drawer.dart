@@ -273,7 +273,3 @@ class _NavDrawerState extends State<NavDrawer> {
     );
   }
 }
-
-// Text(
-//                 "We prioritize your privacy. Notebook does not collect any personal data. Any information gathered is strictly limited to enhancing app functionality, such as device information and usage statistics. We do not store or share personally identifiable information with third parties. Our commitment to your privacy means we refrain from requesting or storing unnecessary personal details. While Notebook may include links to external sites, we do not assume responsibility for their privacy practices. Your data is safeguarded using industry-standard security measures. For any questions or concerns regarding our privacy policies, please contact us at contact@notebookapp.com."),
-//           ),

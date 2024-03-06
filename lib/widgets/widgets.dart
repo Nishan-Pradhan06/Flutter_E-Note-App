@@ -120,3 +120,40 @@ class ChapterHeadingMedium extends StatelessWidget {
     );
   }
 }
+
+
+class TopicsHeadings extends StatelessWidget {
+  String unit, sources;
+  TopicsHeadings({
+    required this.sources,
+    required this.unit,
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(2.0),
+          child: Text(
+            unit,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        Text(
+          sources,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontSize: 14.0,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+      ],
+    );
+  }
+}

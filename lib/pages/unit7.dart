@@ -149,7 +149,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -174,7 +173,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -198,7 +196,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -222,7 +219,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -248,7 +244,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -273,7 +268,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -299,7 +293,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -324,7 +317,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -348,7 +340,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -377,7 +368,6 @@ class _TechNologyState extends State<TechNology> {
                             selectAll: true,
                           ),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -402,7 +392,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -426,7 +415,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -450,7 +438,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -476,7 +463,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -501,7 +487,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -525,7 +510,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -549,7 +533,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -573,7 +556,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -599,7 +581,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -624,7 +605,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -650,7 +630,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -675,7 +654,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -701,7 +679,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -728,7 +705,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -743,7 +719,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -767,7 +742,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -791,7 +765,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.left,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -815,7 +788,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -841,7 +813,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -866,7 +837,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -892,7 +862,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -917,7 +886,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -941,7 +909,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -967,7 +934,6 @@ class _TechNologyState extends State<TechNology> {
                           toolbarOptions: ToolbarOptions(
                               copy: true, cut: true, selectAll: true),
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                             // fontWeight: FontWeight.bold,
                           ),
@@ -992,7 +958,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -1016,7 +981,6 @@ class _TechNologyState extends State<TechNology> {
                           textAlign: TextAlign.start,
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontFamily: "Ubuntu",
                             fontSize: 17.0,
                           ),
                         ),
@@ -1029,7 +993,6 @@ class _TechNologyState extends State<TechNology> {
                           style: TextStyle(
                             fontSize: 24.0,
                             fontWeight: FontWeight.bold,
-                            fontFamily: 'ubuntu',
                           ),
                         ),
                       ],

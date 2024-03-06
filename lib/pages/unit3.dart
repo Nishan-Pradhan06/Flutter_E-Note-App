@@ -40,7 +40,6 @@ class _WebDevelopmentState extends State<WebDevelopment> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.amber,
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 40, 103, 103),
           elevation: 25.0,

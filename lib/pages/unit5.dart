@@ -1,4 +1,5 @@
 import 'package:computer_12/strings/string_unit2.dart';
+import 'package:computer_12/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -100,15 +101,8 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 8.0,
                           ),
-                          const Text(
-                            'Object Oriented Programming(OOP)',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              fontSize: 21.0,
-                              decoration: TextDecoration.underline,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                          ChapterTopics(
+                              heading: 'Object Oriented Programming(OOP)'),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -126,16 +120,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Characteristics of OOP',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
-                          ),
+                          ChapterTopics(heading: 'Characteristics of OOP'),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -150,16 +135,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Features/Element of OOP',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
-                          ),
+                          ChapterTopics(heading: 'Features/Element of OOP'),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -268,16 +244,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const Text(
-                            'Types of inheritance:',
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
-                          ),
+                          ChapterTopics(heading: 'Types of inheritance:'),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -439,16 +406,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Advantages of OOP ',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
-                          ),
+                          ChapterTopics(heading: 'Advantages of OOP '),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -463,16 +421,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Disadvantages of OOP                                                                                                                    ',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
-                          ),
+                          ChapterTopics(heading: 'Disadvantages of OOP '),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -487,16 +436,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            'Applications of OOP  ',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              fontSize: 21.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
-                            ),
-                          ),
+                          ChapterTopics(heading: 'Applications of OOP  '),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -511,13 +451,7 @@ class _OoPState extends State<OoP> {
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const Text(
-                            '***END***',
-                            style: TextStyle(
-                              fontSize: 24.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                          const EndingText(),
                         ],
                       ),
                     ),

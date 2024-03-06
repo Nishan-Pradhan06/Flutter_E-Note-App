@@ -1,3 +1,4 @@
+import 'package:computer_12/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -135,30 +136,7 @@ class _ProgrammingCState extends State<ProgrammingC> {
                           const SizedBox(
                             height: 6.0,
                           ),
-                          const Text(
-                            '***END***',
-                            style: TextStyle(
-                              fontSize: 24.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SelectableText(
-                            '#include<stdio.h>\n#include<conio.h>\nint main() \n{\nint a, b, sum;\nprintf("Enter first number");\nscanf("%d",&a);\nprintf("Enter sum number");\nscanf("%d",&b);\nsum= a+b;\nprintf("The sum of a and b : , sum");\nreturn 0;\n} ',
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                            ),
-                          ),
-                          const SelectableText(
-                            '#include<stdio.h>\n#include<conio.h> ',
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                              color: Colors.purple,
-                            ),
-                          ),
+                          const EndingText(),
                         ],
                       ),
                     ),

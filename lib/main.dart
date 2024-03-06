@@ -1,4 +1,4 @@
-import 'package:computer_12/action_button/floating_action_button.dart';
+import 'package:computer_12/mainscreen/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        fontFamily: "Ubuntu",
+        fontFamily: "Poppins",
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false, //removes debug banner
@@ -36,16 +36,18 @@ class MyApp extends StatelessWidget {
           ],
         ),
         nextScreen: const MainScreen(),
+        // nextScreen: PageView(),
         splashIconSize: 350,
         duration: 4500,
         splashTransition: SplashTransition.fadeTransition,
         backgroundColor: Colors.white,
       ),
+      // const HomeView()
     );
   }
 }
 
-///appbar title and bottom ad call
+// /appbar title and bottom ad call
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 

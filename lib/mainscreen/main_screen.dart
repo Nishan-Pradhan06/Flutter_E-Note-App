@@ -43,7 +43,7 @@ class _ActionButtonState extends State<ActionButton> {
     return Scaffold(
       appBar: AppBar(
         elevation: 40.0,
-        backgroundColor: const Color.fromARGB(255, 17, 65, 65),
+        backgroundColor: const Color.fromARGB(255, 54, 124, 88),
         centerTitle: true,
         title: const Text(
           'Computer Science',
@@ -51,7 +51,6 @@ class _ActionButtonState extends State<ActionButton> {
             color: Colors.white,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
-            fontFamily: 'Ubuntu',
           ),
         ),
       ),

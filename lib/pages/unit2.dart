@@ -1,5 +1,6 @@
 // import 'package:computer_12/Contains/unit3.dart';
 
+import 'package:computer_12/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -84,15 +85,15 @@ class _NetWorkState extends State<NetWork> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.all(2.0),
-                            child: Text(
-                              topics,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                              ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Text(
+                            topics,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                           Text(
@@ -171,7 +172,6 @@ class _NetWorkState extends State<NetWork> {
                             '',
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontFamily: 'ubuntu',
                               fontSize: 16.0,
                               fontWeight: FontWeight.bold,
                             ),
@@ -257,7 +257,6 @@ class _NetWorkState extends State<NetWork> {
                             "Communication in modern days has become very faster and cheaper to send information letters, attach files, perform voice chat and video conference with almost free cost with the help of network. ",
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -272,7 +271,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -282,7 +280,6 @@ class _NetWorkState extends State<NetWork> {
                             "All network resources such as computer printers, file, database etc can be managed and controlled by a cetnral connecting computer also known as the server. So, any rules, privilages, security measures that are necessary in the network can be automatically implemented to the computers and other device from system.",
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -297,7 +294,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 17.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -307,7 +303,6 @@ class _NetWorkState extends State<NetWork> {
                             "Server is used to keep data as backup. It maintains backup of individuals computer information. So, if only data files are lost in any computer, it is possible to restore them form the server.",
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -322,7 +317,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -336,7 +330,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -350,7 +343,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -361,7 +353,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -376,7 +367,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -384,7 +374,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -399,7 +388,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -407,7 +395,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -421,7 +408,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
                             ),
                           ),
                           const SizedBox(
@@ -432,7 +418,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -446,7 +431,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
                             ),
                           ),
                           const SizedBox(
@@ -460,7 +444,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -471,7 +454,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -486,7 +468,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -494,7 +475,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -509,7 +489,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -517,7 +496,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -532,7 +510,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -543,7 +520,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -558,7 +534,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -569,7 +544,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -583,7 +557,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
                             ),
                           ),
                           const SizedBox(
@@ -593,7 +566,6 @@ class _NetWorkState extends State<NetWork> {
                             "There are three types of Computer Network: -\ni) LAN\nii) WAN\niii) MAN",
                             textAlign: TextAlign.left,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -608,7 +580,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -619,7 +590,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -634,7 +604,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -645,7 +614,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -660,7 +628,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -668,7 +635,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -683,7 +649,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -694,7 +659,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -709,7 +673,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -717,7 +680,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -732,7 +694,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -743,7 +704,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -757,7 +717,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
                             ),
                           ),
                           const SizedBox(
@@ -768,7 +727,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -783,7 +741,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 19.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -794,7 +751,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -809,7 +765,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -820,7 +775,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -835,7 +789,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -846,7 +799,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -861,7 +813,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 19.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -872,7 +823,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -887,7 +837,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -898,7 +847,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -913,7 +861,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -924,7 +871,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -939,7 +885,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 19.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -950,7 +895,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -965,7 +909,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -976,7 +919,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -991,7 +933,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1002,7 +943,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1016,7 +956,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
                             ),
                           ),
                           const SizedBox(
@@ -1027,7 +966,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1042,7 +980,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1053,7 +990,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1068,7 +1004,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1079,7 +1014,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1094,7 +1028,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1105,7 +1038,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1120,7 +1052,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1131,7 +1062,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1146,7 +1076,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1157,7 +1086,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1171,7 +1099,6 @@ class _NetWorkState extends State<NetWork> {
                               decoration: TextDecoration.underline,
                               fontSize: 21.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
                             ),
                           ),
                           const SizedBox(
@@ -1182,7 +1109,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1197,7 +1123,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1208,7 +1133,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.left,
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1223,7 +1147,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1234,7 +1157,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.left,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1249,7 +1171,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1259,10 +1180,7 @@ class _NetWorkState extends State<NetWork> {
                             "Transmission Media which do not use any physical connection betwwen two community devices are called unbounded media or unguided media or wireless media. Such type of media use radio waves, Mircrowaves and satellite.\nIt is classified into three media:-\n\ni) Radio wave\nii) MicroWave\niii) Satellite",
                             textAlign: TextAlign.left,
                             // textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                              fontFamily: "Ubuntu",
-                              fontSize: 17.0,
-                            ),
+                            style: TextStyle(fontSize: 17.0),
                           ),
                           const SizedBox(
                             height: 20.0,
@@ -1291,7 +1209,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 21.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1302,7 +1219,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1317,7 +1233,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1325,7 +1240,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1340,7 +1254,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1348,7 +1261,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1360,7 +1272,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1368,7 +1279,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1383,7 +1293,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1391,7 +1300,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1403,7 +1311,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1411,7 +1318,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1426,7 +1332,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1434,7 +1339,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1446,7 +1350,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 17.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SelectableText(
@@ -1454,7 +1357,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1469,7 +1371,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 21.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1480,7 +1381,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1495,7 +1395,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 21.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1506,7 +1405,6 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.left,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
@@ -1521,7 +1419,6 @@ class _NetWorkState extends State<NetWork> {
                               fontSize: 21.0,
                               decoration: TextDecoration.underline,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                           const SizedBox(
@@ -1532,22 +1429,13 @@ class _NetWorkState extends State<NetWork> {
                             textAlign: TextAlign.justify,
                             // textDirection: TextDirection.ltr,
                             style: TextStyle(
-                              fontFamily: "Ubuntu",
                               fontSize: 17.0,
                             ),
                           ),
                           const SizedBox(
                             height: 20.0,
                           ),
-                          const Text(
-                            '***END***',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 24.0,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
-                            ),
-                          ),
+                          const EndingText(),
                         ],
                       ),
                     ),

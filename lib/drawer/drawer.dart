@@ -1,13 +1,11 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, deprecated_member_use
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:share/share.dart';
 import 'package:rating_dialog/rating_dialog.dart';
-// import 'package:computer_12/topics/topics.dart';
-// import 'package:computer_12/action_button/floating_action_button.dart';
-// import 'package:flutter_social_button/flutter_social_button.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 //slide nav bar drawer
 class NavDrawer extends StatefulWidget {
@@ -18,6 +16,17 @@ class NavDrawer extends StatefulWidget {
 }
 
 class _NavDrawerState extends State<NavDrawer> {
+  var defaultText = const TextStyle(
+    color: Colors.black,
+    fontSize: 14.0,
+    fontFamily: "Poppins",
+  );
+  var linkText = TextStyle(
+    color: Colors.blue[900],
+    fontSize: 14.0,
+    fontFamily: "Poppins",
+  );
+
   ///raating dilogue box. libary
   void show() {
     showDialog(
@@ -36,7 +45,7 @@ class _NavDrawerState extends State<NavDrawer> {
     return RatingDialog(
       initialRating: 1.0,
       title: const Text(
-        'Rate Us',
+        'Feedback',
         textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: true),
         softWrap: true,
         textAlign: TextAlign.center,
@@ -69,7 +78,6 @@ class _NavDrawerState extends State<NavDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      // width: MediaQuery.of(context).size.width,
       elevation: 5.0,
       child: ListView(
         padding: EdgeInsets.zero,
@@ -79,7 +87,6 @@ class _NavDrawerState extends State<NavDrawer> {
               'Computer Science',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontFamily: 'ubuntu',
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
@@ -87,7 +94,6 @@ class _NavDrawerState extends State<NavDrawer> {
             accountEmail: const Text(
               'Grade 12 New Curriculam Course Notes',
               style: TextStyle(
-                fontFamily: 'ubuntu',
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
@@ -121,7 +127,6 @@ class _NavDrawerState extends State<NavDrawer> {
               title: const Text(
                 'Home',
                 style: TextStyle(
-                  fontFamily: 'ubuntu',
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
@@ -140,7 +145,6 @@ class _NavDrawerState extends State<NavDrawer> {
               title: const Text(
                 'Share',
                 style: TextStyle(
-                  fontFamily: 'ubuntu',
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
@@ -159,7 +163,6 @@ class _NavDrawerState extends State<NavDrawer> {
               title: const Text(
                 'Rating',
                 style: TextStyle(
-                  fontFamily: 'ubuntu',
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
@@ -180,16 +183,16 @@ class _NavDrawerState extends State<NavDrawer> {
               title: const Text(
                 'Privacy Polices',
                 style: TextStyle(
-                  fontFamily: 'ubuntu',
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               onTap: () {
-                print('Privacy Polices');
+                privacyDilogBox(context);
               },
             ),
           ),
+
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: ListTile(
@@ -200,7 +203,6 @@ class _NavDrawerState extends State<NavDrawer> {
               title: const Text(
                 'Exit',
                 style: TextStyle(
-                  fontFamily: 'ubuntu',
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
@@ -213,48 +215,65 @@ class _NavDrawerState extends State<NavDrawer> {
               },
             ),
           ),
-
-          SizedBox(
-            height: MediaQuery.of(context).size.height / 2.7,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                const Divider(
-                  indent: 20,
-                  endIndent: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    IconButton(
-                        icon: const FaIcon(
-                          FontAwesomeIcons.facebook,
-                          color: Colors.blue,
-                        ),
-                        onPressed: () {
-                          print("Pressed");
-                        }),
-                    IconButton(
-                      icon: const FaIcon(
-                        FontAwesomeIcons.github,
-                      ),
-                      onPressed: () {
-                        print("Pressed Github");
-                      },
-                    ),
-                    IconButton(
-                      icon: const FaIcon(FontAwesomeIcons.instagram),
-                      onPressed: () {
-                        print("Pressed");
-                      },
-                    ),
-                  ],
-                )
-              ],
-            ),
-          )
         ],
       ),
     );
   }
+
+  Future<dynamic> privacyDilogBox(BuildContext context) {
+    return showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text(
+            "Privacy Policies",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          content: SingleChildScrollView(
+            child: RichText(
+              textAlign: TextAlign.justify,
+              text: TextSpan(
+                style: defaultText,
+                children: [
+                  const TextSpan(
+                    text:
+                        "We prioritize your privacy. Notebook does not collect any personal data. Any information gathered is strictly limited to enhancing app functionality, such as device information and usage statistics. We do not store or share personally identifiable information with third parties. Our commitment to your privacy means we refrain from requesting or storing unnecessary personal details. While Notebook may include links to external sites, we do not assume responsibility for their privacy practices. Your data is safeguarded using industry-standard security measures. For any questions or concerns regarding our privacy policies. ",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
+                  TextSpan(
+                    style: linkText,
+                    text: "GITHUB",
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () async {
+                        var url =
+                            "https://github.com/Nishan-Pradhan06/Flutter_E-Note-App";
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw "cannot thorw url";
+                        }
+                      },
+                  ),
+                ],
+              ),
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Close'),
+            ),
+          ],
+        );
+      },
+    );
+  }
 }
+
+// Text(
+//                 "We prioritize your privacy. Notebook does not collect any personal data. Any information gathered is strictly limited to enhancing app functionality, such as device information and usage statistics. We do not store or share personally identifiable information with third parties. Our commitment to your privacy means we refrain from requesting or storing unnecessary personal details. While Notebook may include links to external sites, we do not assume responsibility for their privacy practices. Your data is safeguarded using industry-standard security measures. For any questions or concerns regarding our privacy policies, please contact us at contact@notebookapp.com."),
+//           ),

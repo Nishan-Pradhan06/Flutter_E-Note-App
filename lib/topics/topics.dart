@@ -1,14 +1,11 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
-import 'package:computer_12/Contains/unit1.dart';
-import 'package:computer_12/Contains/unit2.dart';
-import 'package:computer_12/Contains/unit3.dart';
-import 'package:computer_12/Contains/unit4.dart';
-import 'package:computer_12/Contains/unit5.dart';
-import 'package:computer_12/Contains/unit6.dart';
-import 'package:computer_12/Contains/unit7.dart';
-// import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:computer_12/pages/unit1.dart';
+import 'package:computer_12/pages/unit2.dart';
+import 'package:computer_12/pages/unit3.dart';
+import 'package:computer_12/pages/unit4.dart';
+import 'package:computer_12/pages/unit5.dart';
+import 'package:computer_12/pages/unit6.dart';
+import 'package:computer_12/pages/unit7.dart';
 
 class TopicsList extends StatefulWidget {
   const TopicsList({super.key});
@@ -18,53 +15,6 @@ class TopicsList extends StatefulWidget {
 }
 
 class _TopicsListState extends State<TopicsList> {
-  // late InterstitialAd _interstitialAd;
-  // bool _isAdLoaded = false;
-
-  // void _initAd() {
-  //   InterstitialAd.load(
-  //     adUnitId: 'ca-app-pub-3940256099942544/1033173712',
-  //     request: const AdRequest(),
-  //     adLoadCallback: InterstitialAdLoadCallback(
-  //       onAdLoaded: (InterstitialAd ad) {
-  //         setState(() {
-  //           _interstitialAd = ad;
-  //           _isAdLoaded = true;
-  //         });
-  //         _interstitialAd.fullScreenContentCallback = FullScreenContentCallback(
-  //           onAdDismissedFullScreenContent: (ad) {
-  //             _interstitialAd.dispose();
-  //             _initAd(); // Load a new ad after it's dismissed
-  //           },
-  //           onAdFailedToShowFullScreenContent: (ad, error) {
-  //             _interstitialAd.dispose();
-  //             _initAd(); // Load a new ad after failure to show
-  //           },
-  //         );
-  //       },
-  //       onAdFailedToLoad: (error) {
-  //         setState(() {
-  //           _isAdLoaded = false;
-  //         });
-  //       },
-  //     ),
-  //   );
-  // }
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _initAd(); // Call _initAd in initState or wherever appropriate in your code.
-  // }
-
-  // void onAdLoaded(InterstitialAd ad) {
-  //   setState(() {
-  //     _interstitialAd = ad;
-  //     _isAdLoaded = true;
-  //   });
-  // }
-
-/////
   ///start list view of topics.....
   Widget buildCard(String text, VoidCallback onTapFunction) {
     return GestureDetector(
@@ -72,7 +22,7 @@ class _TopicsListState extends State<TopicsList> {
         onTapFunction();
       },
       child: Card(
-        color: const Color.fromARGB(255, 40, 103, 103),
+        color: const Color(0xff618989),
         elevation: 5.0,
         child: Padding(
           padding: const EdgeInsets.all(30.0),
@@ -82,7 +32,6 @@ class _TopicsListState extends State<TopicsList> {
               style: const TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Ubuntu',
                 color: Colors.black87,
               ),
             ),

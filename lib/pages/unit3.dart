@@ -396,9 +396,60 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                   '1) Data Definition Language (DDL)'),
                           const ChapterHeadingMedium(
                               medium_heading: '1.1 CREATE statement'),
+                          HeadingDetails(
+                              contents:
+                                  'In order to create a database we can use CREATE statement as follows:'),
+                          Image.asset("images/unit_3/e9.png"),
+                          HeadingDetails(
+                              contents:
+                                  'The above statement will create a database with the name student.\nIn order to create a database table we can use CREATE statement as follows:'),
+                          Image.asset("images/unit_3/e10.png"),
+                          HeadingDetails(
+                              contents:
+                                  'The above statement will create a database table named student with two column SN and Fname. The number of column can be increased accordingly.'),
+                          const ChapterHeadingMedium(
+                              medium_heading: '1.2 DROP statement'),
+                          HeadingDetails(
+                              contents:
+                                  'It is used to delete database or table from the SQL server.'),
+                          Image.asset("images/unit_3/e11.png"),
+                          HeadingDetails(
+                              contents:
+                                  'This statement will delete database named student from the SQL server.'),
+                          Image.asset("images/unit_3/e12.png"),
+                          HeadingDetails(
+                              contents:
+                                  'This statement will delete database table named student from the SQL server.'),
                           const ChapterHeadingMedium(
                               medium_heading:
                                   '2) Data Manipulation Language (DML)'),
+                          HeadingDetails(
+                              contents:
+                                  'DML is related with manipulation of records such as retrieval, sorting, displaying and deleting records or data. It helps user to submit query and display report of the table. It provide technique for processing the database. It includes commands like SELECT, INSERT, DELETE and UPDATE to manipulate the information stored in the database.'),
+                          const ChapterHeadingMedium(
+                              medium_heading: '2.1) SELECT statement'),
+                          Image.asset("images/unit_3/e13.png"),
+                          HeadingDetails(
+                              contents:
+                                  'This statement will select all the columns from the database table named student.'),
+                          const ChapterHeadingMedium(
+                              medium_heading: '2.2) INSERT statement'),
+                          Image.asset("images/unit_3/e14.png"),
+                          HeadingDetails(
+                              contents:
+                                  'The above statement will insert 3 and Ram into the database table named student.'),
+                          const ChapterHeadingMedium(
+                              medium_heading: '2.3) DELETE statement'),
+                          Image.asset("images/unit_3/e15.png"),
+                          HeadingDetails(
+                              contents:
+                                  "This statement will delete all the records from the student table where the Fname value is 'Ram'."),
+                          const ChapterHeadingMedium(
+                              medium_heading: '2.4) UPDATE statement'),
+                          Image.asset("images/unit_3/e16.png"),
+                          HeadingDetails(
+                              contents:
+                                  'This stament will update the update the table record whose fname is "Ram".'),
                           const ChapterHeadingMedium(
                               medium_heading: '3) Data Control Language (DCL)'),
                           HeadingDetails(

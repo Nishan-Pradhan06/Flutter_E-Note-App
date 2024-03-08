@@ -45,17 +45,18 @@ class _ProgrammingCState extends State<ProgrammingC> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 25.0,
-          backgroundColor: const Color.fromARGB(255, 40, 103, 103),
+          backgroundColor: const Color(0xff618989),
           centerTitle: true,
-          title: const Text('Programming in C'),
+          title: const Text('unit 4',
+              style: TextStyle(fontSize: 30, color: Colors.white)),
         ),
         body: PageView(
           children: [
             GestureDetector(
               child: CupertinoScrollbar(
-                thickness: 5.0,
+                thickness: 10.0,
                 thumbVisibility: true,
-                thicknessWhileDragging: 8.0,
+                thicknessWhileDragging: 10.0,
                 child: InteractiveViewer(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 7.0),
@@ -65,7 +66,7 @@ class _ProgrammingCState extends State<ProgrammingC> {
                         children: <Widget>[
                           TopicsHeadings(
                             sources: 'Sources: Buddha Publication Pvt. Ltd.',
-                            unit: 'Unit 4',
+                            unit: 'Programming in C',
                           ),
                           const SizedBox(
                             height: 8.0,

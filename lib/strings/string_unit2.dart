@@ -1,7 +1,7 @@
 //details
 
 
-String titleText = 'Unit-2';
+String titleText = 'Unit 2';
 
 String topics = 'Data Communication and Networking';
 

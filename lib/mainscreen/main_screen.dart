@@ -43,7 +43,7 @@ class _ActionButtonState extends State<ActionButton> {
     return Scaffold(
       appBar: AppBar(
         elevation: 40.0,
-        backgroundColor: const Color.fromARGB(255, 54, 124, 88),
+        backgroundColor: const Color(0xff618989),
         centerTitle: true,
         title: const Text(
           'Computer Science',

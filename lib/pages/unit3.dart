@@ -42,18 +42,19 @@ class _WebDevelopmentState extends State<WebDevelopment> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 214, 212, 212),
+          backgroundColor: const Color(0xff618989),
           elevation: 25.0,
           centerTitle: true,
-          title: const Text('Web Technology'),
+          title: const Text('Unit 3',
+              style: TextStyle(fontSize: 30, color: Colors.white)),
         ),
         body: PageView(
           children: [
             GestureDetector(
               child: CupertinoScrollbar(
-                thickness: 5.0,
+                thickness: 10.0,
                 thumbVisibility: true,
-                thicknessWhileDragging: 8.0,
+                thicknessWhileDragging: 10.0,
                 child: InteractiveViewer(
                   child: SingleChildScrollView(
                     child: Padding(
@@ -62,7 +63,7 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           TopicsHeadings(
-                            unit: 'Unit 3',
+                            unit: 'Web Technology',
                             sources: 'Sources: Buddha Publication Pvt. Ltd.',
                           ),
                           const SizedBox(

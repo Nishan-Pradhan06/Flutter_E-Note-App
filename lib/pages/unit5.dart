@@ -61,17 +61,18 @@ class _OoPState extends State<OoP> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 25.0,
-          backgroundColor: const Color.fromARGB(255, 40, 103, 103),
+          backgroundColor: const Color(0xff618989),
           centerTitle: true,
-          title: Text(titleText),
+          title: const Text('Unit 5',
+              style: TextStyle(fontSize: 30, color: Colors.white)),
         ),
         body: PageView(
           children: [
             GestureDetector(
               child: CupertinoScrollbar(
-                thickness: 5.0,
+                thickness: 10.0,
                 thumbVisibility: true,
-                thicknessWhileDragging: 8.0,
+                thicknessWhileDragging: 10.0,
                 child: InteractiveViewer(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 7.0),
@@ -79,13 +80,13 @@ class _OoPState extends State<OoP> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.all(2.0),
+                          const Padding(
+                            padding: EdgeInsets.all(2.0),
                             child: Text(
-                              topics,
+                              "Object Oriented Programming",
                               textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 2.0,
+                              style: TextStyle(
+                                fontSize: 24.0,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),

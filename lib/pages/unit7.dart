@@ -55,9 +55,10 @@ class _TechNologyState extends State<TechNology> {
     return Scaffold(
       appBar: AppBar(
         elevation: 25.0,
-        backgroundColor: const Color.fromARGB(255, 31, 86, 86),
+        backgroundColor: const Color(0xff618989),
         centerTitle: true,
-        title: const Text('Recent Trend in Technology'),
+        title: const Text('Unit 7',
+            style: TextStyle(fontSize: 30, color: Colors.white)),
         toolbarHeight: 60.0,
       ),
       body: PageView(
@@ -65,7 +66,7 @@ class _TechNologyState extends State<TechNology> {
           GestureDetector(
             child: CupertinoScrollbar(
               ///scrollbar
-              thickness: 5.0,
+              thickness: 10.0,
               thumbVisibility: true,
               radius: const Radius.circular(10.0),
               thicknessWhileDragging: 10.0, //scro//bar
@@ -80,12 +81,11 @@ class _TechNologyState extends State<TechNology> {
                         const Padding(
                           padding: EdgeInsets.all(2.0),
                           child: Text(
-                            'Unit 7',
+                            'Recent Trend in Technology',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Ubuntu",
                             ),
                           ),
                         ),

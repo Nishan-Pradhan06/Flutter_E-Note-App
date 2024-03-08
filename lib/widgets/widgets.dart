@@ -9,7 +9,7 @@ Column chapterHeading() {
       Padding(
         padding: EdgeInsets.all(2.0),
         child: Text(
-          'Unit 1',
+          'Database',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24.0,

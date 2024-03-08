@@ -64,7 +64,7 @@ class _NetWorkState extends State<NetWork> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 25.0,
-          backgroundColor: const Color.fromARGB(255, 40, 103, 103),
+          backgroundColor: const Color(0xff618989),
           centerTitle: true,
           title: Text(
             titleText,
@@ -75,9 +75,9 @@ class _NetWorkState extends State<NetWork> {
           children: [
             GestureDetector(
               child: CupertinoScrollbar(
-                thickness: 5.0,
+                thickness: 10.0,
                 thumbVisibility: true,
-                thicknessWhileDragging: 8.0,
+                thicknessWhileDragging: 10.0,
                 child: InteractiveViewer(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 7.0),

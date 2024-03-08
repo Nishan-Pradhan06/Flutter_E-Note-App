@@ -48,10 +48,10 @@ class _DataBaseState extends State<DataBase> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 25.0,
-          backgroundColor: const Color.fromARGB(255, 40, 103, 103),
+          backgroundColor: const Color(0xff618989),
           centerTitle: true,
           title: const Text(
-            'Database',
+            'Unit 1',
             style: TextStyle(color: Colors.white, fontSize: 28),
           ),
         ),
@@ -59,9 +59,9 @@ class _DataBaseState extends State<DataBase> {
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           child: CupertinoScrollbar(
-            thickness: 5.0,
+            thickness: 10.0,
             thumbVisibility: true,
-            thicknessWhileDragging: 8.0,
+            thicknessWhileDragging: 10.0,
             child: InteractiveViewer(
               child: SingleChildScrollView(
                 child: Padding(

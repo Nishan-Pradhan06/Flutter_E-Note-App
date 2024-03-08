@@ -62,15 +62,16 @@ class _SpMState extends State<SpM> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 25.0,
-          backgroundColor: const Color.fromARGB(255, 97, 137, 137),
+          backgroundColor: const Color(0xff618989),
           centerTitle: true,
-          title: const Text('Software Model Process'),
+          title: const Text('Unit 6',
+              style: TextStyle(fontSize: 30, color: Colors.white)),
         ),
         body: PageView(
           children: [
             GestureDetector(
               child: CupertinoScrollbar(
-                thickness: 8.0,
+                thickness: 10.0,
                 thumbVisibility: true,
                 thicknessWhileDragging: 10.0,
                 child: InteractiveViewer(
@@ -693,7 +694,7 @@ class _SpMState extends State<SpM> {
     return const Padding(
       padding: EdgeInsets.all(2.0),
       child: Text(
-        "Unit 6",
+        "Software Model Process",
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 24.0,

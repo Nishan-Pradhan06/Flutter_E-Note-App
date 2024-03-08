@@ -73,8 +73,10 @@ class _ProgrammingCState extends State<ProgrammingC> {
                           ChapterTopics(heading: 'Functions:'),
                           HeadingDetails(
                             contents:
-                                'Functions are the self-contained program that contains several block of statement which performs the defined task. In C language, we can create one or more functions according to the requirements.\n\nUsually, In C programs flows from top left to right bottom of main() functions. We can create any number of functions below that main() functions. These function are called from main() function. Requirement while creating a functions.\n\na) Declare a function\n\nb) Call statement\n\nc) Definition of function.\n\nAfter the function is called from the main(), the flow of control will return to the main() function.',
+                                'Functions are the self-contained program that contains several block of statement which performs the defined task. In C language, we can create one or more functions according to the requirements.\n\nUsually, In C programs flows from top left to right bottom of main() functions. We can create any number of functions below that main() functions. These function are called from main() function. Requirement while creating a functions.\n\na) Declare a function\n\nb) Call statement\n\nc) Definition of function.\n\nAfter the function is called from the main(), the flow of control will return to the main() function.\nProgram example of function.',
                           ),
+                          const ImageWidget(imagePath: 'images/unit_4/p1.png'),
+                          const ImageWidget(imagePath: 'images/unit_4/p2.png'),
                           const ChapterHeadingMedium(
                               medium_heading: 'Advantages'),
                           HeadingDetails(
@@ -90,6 +92,8 @@ class _ProgrammingCState extends State<ProgrammingC> {
                             contents:
                                 'Those function which  calls itself is known as recursive function and the concept of using recursive functions to repeat the execution of statements as per the requirement is known as recursion. The criteria for recursive functions are:\n1. The function should call itself.\n2. There should be terminating condition so that function calling will not be for infinite number of time. \n\nProgram example of  recursive function',
                           ),
+                          const ImageWidget(imagePath: 'images/unit_4/p3.png'),
+                          const ImageWidget(imagePath: 'images/unit_4/p4.png'),
                           const SizedBox(
                             height: 6.0,
                           ),
@@ -105,6 +109,7 @@ class _ProgrammingCState extends State<ProgrammingC> {
                             contents:
                                 '1. It helps us to access a variable that is not defined within a function.\n2. It helps to reduce program length and complexity i.e. faster program execution time.\n3. It is more convenient to handle datas.\n4. It helps to return one or more than one value from the functions.\nProgram example:',
                           ),
+                          const ImageWidget(imagePath: 'images/unit_4/p5.png'),
                           ChapterTopics(heading: 'File Handling in C'),
                           HeadingDetails(
                               contents:
@@ -132,6 +137,11 @@ class _ProgrammingCState extends State<ProgrammingC> {
                           const SizedBox(
                             height: 6.0,
                           ),
+                          HeadingDetails(
+                            contents:
+                                '1) Create a datafile “patient.txt” and store name, disease, age and bed number of a patient.',
+                          ),
+                          const ImageWidget(imagePath: 'images/unit_4/p6.png'),
                           const ChapterHeadingMedium(
                               medium_heading:
                                   'Read/Display/retrieve/access data from a datafile'),
@@ -161,6 +171,28 @@ class _ProgrammingCState extends State<ProgrammingC> {
               )
             : const SizedBox(),
       ),
+    );
+  }
+}
+
+class ImageWidget extends StatelessWidget {
+  final String imagePath;
+  const ImageWidget({
+    required this.imagePath,
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Image.asset(
+          imagePath,
+        ),
+        const SizedBox(
+          height: 3.0,
+        ),
+      ],
     );
   }
 }

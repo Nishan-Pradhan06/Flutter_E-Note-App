@@ -14,7 +14,6 @@ Column chapterHeading() {
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
-            fontFamily: 'Ubuntu',
           ),
         ),
       ),
@@ -23,7 +22,6 @@ Column chapterHeading() {
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 14.0,
-          fontFamily: 'Ubuntu',
           fontStyle: FontStyle.italic,
         ),
       ),
@@ -45,7 +43,6 @@ class EndingText extends StatelessWidget {
       style: TextStyle(
         fontSize: 24.0,
         fontWeight: FontWeight.bold,
-
       ),
     );
   }
@@ -69,9 +66,7 @@ class HeadingDetails extends StatelessWidget {
           // ignore: deprecated_member_use
           const ToolbarOptions(copy: true, cut: true, selectAll: true),
       style: const TextStyle(
-
         fontSize: 16.0,
- 
       ),
     );
   }
@@ -120,7 +115,6 @@ class ChapterHeadingMedium extends StatelessWidget {
     );
   }
 }
-
 
 class TopicsHeadings extends StatelessWidget {
   String unit, sources;

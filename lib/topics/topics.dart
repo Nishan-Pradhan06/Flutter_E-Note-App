@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:computer_12/pages/unit1.dart';
-import 'package:computer_12/pages/unit2.dart';
-import 'package:computer_12/pages/unit3.dart';
-import 'package:computer_12/pages/unit4.dart';
-import 'package:computer_12/pages/unit5.dart';
-import 'package:computer_12/pages/unit6.dart';
-import 'package:computer_12/pages/unit7.dart';
+import '../pages/unit1.dart';
+import '../pages/unit2.dart';
+import '../pages/unit3.dart';
+import '../pages/unit4.dart';
+import '../pages/unit5.dart';
+import '../pages/unit6.dart';
+import '../pages/unit7.dart';
 
 class TopicsList extends StatefulWidget {
   const TopicsList({super.key});
@@ -17,6 +17,8 @@ class TopicsList extends StatefulWidget {
 class _TopicsListState extends State<TopicsList> {
   ///start list view of topics.....
   Widget buildCard(String text, VoidCallback onTapFunction) {
+    final screenSize = MediaQuery.of(context).size;
+    double textSize = screenSize.width * 0.04;
     return GestureDetector(
       onTap: () {
         onTapFunction();
@@ -29,8 +31,8 @@ class _TopicsListState extends State<TopicsList> {
           child: Center(
             child: Text(
               text,
-              style: const TextStyle(
-                fontSize: 18.0,
+              style: TextStyle(
+                fontSize: textSize,
                 fontWeight: FontWeight.bold,
                 color: Colors.black87,
               ),

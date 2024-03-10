@@ -1,4 +1,4 @@
-import 'package:computer_12/main.dart';
+import 'package:computer_science/main.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';

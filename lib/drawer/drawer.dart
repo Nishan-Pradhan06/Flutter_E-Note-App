@@ -169,8 +169,6 @@ class _NavDrawerState extends State<NavDrawer> {
               ),
               onTap: () {
                 show();
-
-                ///function call from above rating module
                 print('Rate');
               },
             ),

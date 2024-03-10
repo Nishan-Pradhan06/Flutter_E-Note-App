@@ -1,4 +1,4 @@
-import 'package:computer_science/mainscreen/main_screen.dart';
+import 'package:computer_12/mainscreen/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';

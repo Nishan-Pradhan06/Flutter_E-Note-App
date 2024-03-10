@@ -1,4 +1,4 @@
-package com.example.computer_science
+package com.example.computer_12
 
 import io.flutter.embedding.android.FlutterActivity
 

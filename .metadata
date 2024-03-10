@@ -1,11 +1,11 @@
 # This file tracks properties of this Flutter project.
 # Used by Flutter tool to assess capabilities and perform upgrades etc.
 #
-# This file should be version controlled and should not be manually edited.
+# This file should be version controlled.
 
 version:
-  revision: "41456452f29d64e8deb623a3c927524bcf9f111b"
-  channel: "stable"
+  revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+  channel: stable
 
 project_type: app
 
@@ -13,26 +13,26 @@ project_type: app
 migration:
   platforms:
     - platform: root
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
     - platform: android
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
     - platform: ios
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
     - platform: linux
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
     - platform: macos
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
     - platform: web
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
     - platform: windows
-      create_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
-      base_revision: 41456452f29d64e8deb623a3c927524bcf9f111b
+      create_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
+      base_revision: f1875d570e39de09040c8f79aa13cc56baab8db1
 
   # User provided section
 

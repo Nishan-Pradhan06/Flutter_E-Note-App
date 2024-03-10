@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../pages/unit1.dart';
-import '../pages/unit2.dart';
-import '../pages/unit3.dart';
-import '../pages/unit4.dart';
-import '../pages/unit5.dart';
-import '../pages/unit6.dart';
-import '../pages/unit7.dart';
+import 'package:computer_12/pages/unit1.dart';
+import 'package:computer_12/pages/unit2.dart';
+import 'package:computer_12/pages/unit3.dart';
+import 'package:computer_12/pages/unit4.dart';
+import 'package:computer_12/pages/unit5.dart';
+import 'package:computer_12/pages/unit6.dart';
+import 'package:computer_12/pages/unit7.dart';
 
 class TopicsList extends StatefulWidget {
   const TopicsList({super.key});

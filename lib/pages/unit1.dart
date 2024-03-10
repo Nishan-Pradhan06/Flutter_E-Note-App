@@ -1,11 +1,10 @@
 // ignore_for_file: must_be_immutable, non_constant_identifier_names
 
+import 'package:computer_12/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-
-import '../widgets/widgets.dart';
 
 class DataBase extends StatefulWidget {
   const DataBase({super.key});

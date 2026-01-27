@@ -7,6 +7,7 @@ import '../../widgets/widgets.dart';
 import '../components/app_bar.dart';
 import '../components/footer.dart';
 
+// ignore: must_be_immutable
 class SpM extends StatelessWidget {
    SpM({super.key});
 
@@ -612,7 +613,7 @@ class SpM extends StatelessWidget {
           ),
         ],
       ),
-        //  bottomNavigationBar: const BannerAdHelper(),
+    
     );
   }
 

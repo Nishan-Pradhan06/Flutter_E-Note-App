@@ -1,7 +1,8 @@
-import 'package:computer_12/constant/const.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+
+import '../constant/const.dart';
 
 class PrivacyPolicyProvider with ChangeNotifier {
   // Updated showPrivacyDialog method

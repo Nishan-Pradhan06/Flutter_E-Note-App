@@ -33,10 +33,9 @@ class RatingProvider with ChangeNotifier {
           starSize: 25,
           submitButtonText: 'Submit',
           commentHint: 'Tell Us Your Comments',
-          onCancelled: () => debugPrint('Cancelled'),
+          onCancelled: () {},
           onSubmitted: (response) {
-            debugPrint(
-                'Rating: ${response.rating}, Comment: ${response.comment}');
+           
           },
         );
       },

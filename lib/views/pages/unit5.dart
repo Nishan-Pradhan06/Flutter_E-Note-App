@@ -1,10 +1,12 @@
-import 'package:computer_12/strings/string_unit2.dart';
-import 'package:computer_12/widgets/widgets.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../strings/string_unit2.dart';
+import '../../widgets/widgets.dart';
 import '../components/app_bar.dart';
 import '../components/footer.dart';
 
+// ignore: must_be_immutable
 class OoP extends StatelessWidget {
   OoP({super.key});
 
@@ -428,7 +430,6 @@ class OoP extends StatelessWidget {
           ),
         ],
       ),
-      // bottomNavigationBar: const BannerAdHelper(),
     );
   }
 }

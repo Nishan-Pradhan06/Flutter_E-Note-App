@@ -1,10 +1,9 @@
 // ignore_for_file: must_be_immutable
-
-import 'package:computer_12/views/components/footer.dart';
-import 'package:computer_12/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../widgets/widgets.dart';
 import '../components/app_bar.dart';
+import '../components/footer.dart';
 import '../components/headings.dart';
 
 class ProgrammingC extends StatelessWidget {
@@ -128,7 +127,6 @@ class ProgrammingC extends StatelessWidget {
           )
         ],
       ),
-    // bottomNavigationBar: const BannerAdHelper(),
     );
   }
 }

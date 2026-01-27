@@ -1,12 +1,12 @@
 import 'dart:io';
-import 'package:computer_12/views/components/drawer/header.dart';
-import 'package:computer_12/views/components/drawer/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
 import '../../providers/privacy_policy_provider.dart';
-import 'package:share/share.dart';
-import '../../providers/rating_providers.dart';
+import 'about_developer.dart';
+import 'drawer/header.dart';
+import 'drawer/menu.dart';
 
 class CustomDrawerComponent extends StatelessWidget {
   const CustomDrawerComponent({super.key});
@@ -31,23 +31,29 @@ class CustomDrawerComponent extends StatelessWidget {
             title: 'Share',
             onTap: () {
               Share.share(
-                  'https://play.google.com/store/apps/details?id=com.instructivetech.testapp');
+                'https://play.google.com/store/apps/details?id=com.nishanpradhan.csnotes',
+              );
             },
           ),
           MenuDrawer(
-            icon: Icons.star_outlined,
-            title: 'Rating',
+            icon: Icons.info_outline_rounded,
+            title: 'About Developer',
             onTap: () {
-              Provider.of<RatingProvider>(context, listen: false)
-                  .showRatingDialog(context);
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const DeveloperAboutScreen(),
+                ),
+              );
             },
           ),
           MenuDrawer(
             icon: Icons.lock_outline_rounded,
             title: 'Privacy Policies',
             onTap: () {
-              Provider.of<PrivacyPolicyProvider>(context, listen: false)
-                  .showPrivacyDialog(context);
+              Provider.of<PrivacyPolicyProvider>(
+                context,
+                listen: false,
+              ).showPrivacyDialog(context);
             },
           ),
           MenuDrawer(

@@ -4,6 +4,7 @@ import '../../strings/string_unit2.dart';
 import '../components/app_bar.dart';
 import '../components/footer.dart';
 
+// ignore: must_be_immutable
 class NetWork extends StatelessWidget {
   NetWork({super.key});
 
@@ -1405,7 +1406,7 @@ class NetWork extends StatelessWidget {
           ),
         ],
       ),
-      // bottomNavigationBar: const BannerAdHelper(),
+      
     );
   }
 }

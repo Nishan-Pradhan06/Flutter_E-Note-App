@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../components/app_bar.dart';
 import '../components/footer.dart';
 
+// ignore: must_be_immutable
 class TechnologyChaper extends StatelessWidget {
   TechnologyChaper({super.key});
 
@@ -964,7 +965,7 @@ class TechnologyChaper extends StatelessWidget {
           ),
         ],
       ),
-      // bottomNavigationBar: const BannerAdHelper(),
+   
     );
   }
 }

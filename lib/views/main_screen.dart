@@ -1,7 +1,7 @@
-import 'package:computer_12/views/components/app_bar.dart';
-import 'package:computer_12/views/components/custom_drawer.dart';
-import 'package:computer_12/views/topics/topics.dart';
 import 'package:flutter/material.dart';
+import 'components/app_bar.dart';
+import 'components/custom_drawer.dart';
+import 'topics/topics.dart';
 
 class ActionButton extends StatelessWidget {
   const ActionButton({super.key});
@@ -16,7 +16,6 @@ class ActionButton extends StatelessWidget {
         child: TopicsList(),
       ),
       backgroundColor: Color.fromARGB(130, 173, 223, 241),
-      // bottomNavigationBar: BannerAdHelper(),
       drawer: CustomDrawerComponent(),
     );
   }

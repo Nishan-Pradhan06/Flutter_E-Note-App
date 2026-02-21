@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'providers/privacy_policy_provider.dart';
 import 'providers/rating_providers.dart';
 import 'views/main_screen.dart';
+import 'injection.dart';
+import 'router.dart';
+import 'features/highlights/blocs/highlight_bloc.dart';
 
 /////initializing
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  await configureDependencies();
   runApp(const MyApp());
 }
 
@@ -23,31 +29,19 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => PrivacyPolicyProvider()),
         ChangeNotifierProvider(create: (_) => RatingProvider()),
       ],
-      child: MaterialApp(
-        theme: ThemeData(
-          fontFamily: "Poppins",
-          useMaterial3: true,
-        ),
-        debugShowCheckedModeBanner: false, //removes debug banner
-        themeAnimationCurve: Curves.fastLinearToSlowEaseIn,
-        home: AnimatedSplashScreen(
-          splash: Column(
-            //starting splash  screen
-            children: [
-              Lottie.asset(
-                'images/loading.json',
-                height: 350,
-                width: 200,
-              ),
-            ],
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) =>
+                getIt<HighlightBloc>()..add(const HighlightEvent.fetchAll()),
           ),
-          nextScreen: const MainScreen(),
-          splashIconSize: 350,
-          duration: 4500,
-          splashTransition: SplashTransition.fadeTransition,
-          backgroundColor: Colors.white,
+        ],
+        child: MaterialApp.router(
+          routerConfig: router,
+          theme: ThemeData(fontFamily: "Poppins", useMaterial3: true),
+          debugShowCheckedModeBanner: false, //removes debug banner
+          themeAnimationCurve: Curves.fastLinearToSlowEaseIn,
         ),
-        // const HomeView()
       ),
     );
   }
@@ -59,8 +53,6 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: ActionButton(),
-    );
+    return const Scaffold(body: ActionButton());
   }
 }

@@ -1,67 +1,62 @@
-// ignore_for_file: must_be_immutable, non_constant_identifier_names
-
 import 'package:flutter/material.dart';
+import '../features/highlights/widgets/highlight_wrapper.dart';
+import '../features/highlights/models/highlight_model.dart';
 
 //headings
-Column chapterHeading() {
-  return const Column(
+Column chapterHeading(String title) {
+  return Column(
     children: [
       Padding(
-        padding: EdgeInsets.all(2.0),
+        padding: const EdgeInsets.all(2.0),
         child: Text(
-          'Database',
+          title,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 24.0,
-            fontWeight: FontWeight.bold,
-          ),
+          style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
         ),
       ),
-      Text(
+      const Text(
         'Sources: Buddha Publication Pvt. Ltd.',
         textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 14.0,
-          fontStyle: FontStyle.italic,
-        ),
+        style: TextStyle(fontSize: 14.0, fontStyle: FontStyle.italic),
       ),
     ],
   );
 }
 
-
-
 //contents of heading
 class HeadingDetails extends StatelessWidget {
-  String contents;
-  HeadingDetails({
+  final String contents;
+  final String pageId;
+  final TextStyle? style;
+  final TextAlign textAlign;
+  final HighlightModel? targetHighlight;
+
+  const HeadingDetails({
     required this.contents,
+    required this.pageId,
+    this.style,
+    this.textAlign = TextAlign.justify,
+    this.targetHighlight,
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return SelectableText(
-      contents,
-      textAlign: TextAlign.justify,
-      // ignore: deprecated_member_use
-      toolbarOptions:
-          // ignore: deprecated_member_use
-          const ToolbarOptions(copy: true, cut: true, selectAll: true),
-      style: const TextStyle(
-        fontSize: 16.0,
-      ),
+    return HighlightWrapper(
+      pageId: pageId,
+      content: contents,
+      style: style ?? const TextStyle(fontSize: 17.0),
+      textAlign: textAlign,
+      targetHighlight: targetHighlight,
     );
   }
 }
-//topics
 
+//topics
 class ChapterTopics extends StatelessWidget {
-  String heading;
-  ChapterTopics({
-    required this.heading,
-    super.key,
-  });
+  final String heading;
+
+  const ChapterTopics({required this.heading, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -78,16 +73,13 @@ class ChapterTopics extends StatelessWidget {
 }
 
 class ChapterHeadingMedium extends StatelessWidget {
-  final String medium_heading;
-  const ChapterHeadingMedium({
-    required this.medium_heading,
-    super.key,
-  });
+  final String mediumHeading;
+  const ChapterHeadingMedium({required this.mediumHeading, super.key});
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      medium_heading,
+      mediumHeading,
       textAlign: TextAlign.left,
       textDirection: TextDirection.ltr,
       style: const TextStyle(

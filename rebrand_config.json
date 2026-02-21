@@ -1,0 +1,10 @@
+{
+    "app_name": "Computer Science",
+    "package_name": "com.nishanpradhan.notes",
+    "icon_path": "images/appLogo.png",
+    "splash_config": {
+        "color": "#FFFFFF",
+        "image": "images/appLogo.png",
+        "dark_color": "#111111"
+    }
+}

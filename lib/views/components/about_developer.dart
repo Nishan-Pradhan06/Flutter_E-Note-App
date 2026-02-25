@@ -14,91 +14,120 @@ class DeveloperAboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xffF4FAFB),
       appBar: AppBar(
         title: const Text('About Developer'),
         centerTitle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.white,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: <Color>[Color(0xff0F766E), Color(0xff115E59)],
+            ),
+          ),
+        ),
         elevation: 0,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
-          children: [
-            const SizedBox(height: 20),
-            // Profile Avatar
-            const CircleAvatar(
-              radius: 50,
-              backgroundColor: Colors.blue,
-              child: Icon(Icons.person, size: 60, color: Colors.white),
-            ),
-            const SizedBox(height: 20),
-
-            // Developer Name
-            const Text(
-              'Nishan Pradhan',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-
-            // Role
-            const Text(
-              'Flutter Developer',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            ),
-            const SizedBox(height: 8),
-
-            // Company
-            const Text(
-              'Working on Lunar I.T. Solution',
-              style: TextStyle(fontSize: 14, color: Colors.grey),
-            ),
-            const SizedBox(height: 40),
-
-            // Social Links Section
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Connect With Me',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(18),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: <Color>[Color(0xff0F766E), Color(0xff0D9488)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(
+                    color: const Color(0xff0F766E).withValues(alpha: 0.24),
+                    blurRadius: 20,
+                    offset: const Offset(0, 8),
+                  ),
+                ],
+              ),
+              child: const Column(
+                children: <Widget>[
+                  CircleAvatar(
+                    radius: 44,
+                    backgroundColor: Colors.white,
+                    child: Icon(
+                      Icons.person,
+                      size: 54,
+                      color: Color(0xff0F766E),
+                    ),
+                  ),
+                  SizedBox(height: 14),
+                  Text(
+                    'Nishan Pradhan',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 6),
+                  Text(
+                    'Flutter Developer',
+                    style: TextStyle(color: Color(0xffD6FFF8), fontSize: 15),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    'Lunar I.T. Solution',
+                    style: TextStyle(color: Color(0xffC4F8F0), fontSize: 13),
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 16),
-
-            // Portfolio Link
-            _buildSocialLink(
-              icon: Icons.language,
-              label: 'Portfolio',
-              url: 'https://www.nishanpradhan.com.np/',
+            const SizedBox(height: 18),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    const Text(
+                      'Connect With Me',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff0F172A),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    _buildSocialLink(
+                      icon: Icons.language,
+                      label: 'Portfolio',
+                      url: 'https://www.nishanpradhan.com.np/',
+                    ),
+                    _buildSocialLink(
+                      icon: Icons.code_rounded,
+                      label: 'GitHub',
+                      url: 'https://github.com/Nishan-Pradhan06',
+                    ),
+                    _buildSocialLink(
+                      icon: Icons.work_outline_rounded,
+                      label: 'LinkedIn',
+                      url: 'https://www.linkedin.com/in/nishan-pradhan06/',
+                    ),
+                  ],
+                ),
+              ),
             ),
-
-            // GitHub Link
-            _buildSocialLink(
-              icon: Icons.code,
-              label: 'GitHub',
-              url: 'https://github.com/Nishan-Pradhan06',
-            ),
-
-            // LinkedIn Link
-            _buildSocialLink(
-              icon: Icons.work,
-              label: 'LinkedIn',
-              url: 'https://www.linkedin.com/in/nishan-pradhan06/',
-            ),
-
-            const SizedBox(height: 40),
-
-            // Footer
-            const Divider(),
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
             Text(
-              'Made with ❤️ in Flutter',
-              style: TextStyle(color: Colors.grey[600], fontSize: 14),
+              'Made with Flutter',
+              style: TextStyle(color: Colors.grey[700], fontSize: 14),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 6),
             Text(
               '© ${DateTime.now().year} Nishan Pradhan',
-              style: TextStyle(color: Colors.grey[400], fontSize: 12),
+              style: TextStyle(color: Colors.grey[500], fontSize: 12),
             ),
           ],
         ),
@@ -112,19 +141,34 @@ class DeveloperAboutScreen extends StatelessWidget {
     required String url,
   }) {
     return InkWell(
-      onTap: () => _launchURL(url),
+      borderRadius: BorderRadius.circular(12),
+      onTap: () async {
+        await _launchURL(url);
+      },
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 12.0),
+        padding: const EdgeInsets.symmetric(vertical: 10),
         child: Row(
-          children: [
-            Icon(icon, size: 24, color: Colors.blue),
-            const SizedBox(width: 16),
+          children: <Widget>[
+            Container(
+              height: 36,
+              width: 36,
+              decoration: BoxDecoration(
+                color: const Color(0xffE8F5F4),
+                borderRadius: BorderRadius.circular(9),
+              ),
+              child: Icon(icon, size: 20, color: const Color(0xff0F766E)),
+            ),
+            const SizedBox(width: 12),
             Text(
               label,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
             ),
             const Spacer(),
-            const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey),
+            const Icon(
+              Icons.open_in_new_rounded,
+              size: 18,
+              color: Color(0xff64748B),
+            ),
           ],
         ),
       ),

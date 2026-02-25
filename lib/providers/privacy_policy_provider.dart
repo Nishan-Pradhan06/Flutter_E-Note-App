@@ -5,102 +5,69 @@ import 'package:url_launcher/url_launcher_string.dart';
 import '../constant/const.dart';
 
 class PrivacyPolicyProvider with ChangeNotifier {
-  // Updated showPrivacyDialog method
-
   Future<void> showPrivacyDialog(BuildContext context) async {
     await showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text(
-            "Privacy Policies",
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          titlePadding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+          contentPadding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18),
+          ),
+          title: Row(
+            children: <Widget>[
+              Container(
+                height: 32,
+                width: 32,
+                decoration: BoxDecoration(
+                  color: const Color(0xffE8F5F4),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Icon(
+                  Icons.shield_outlined,
+                  color: Color(0xff0F766E),
+                  size: 18,
+                ),
+              ),
+              const SizedBox(width: 10),
+              const Text(
+                'Privacy Policy',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
           content: SingleChildScrollView(
             child: Column(
-              children: [
-                RichText(
+              children: <Widget>[
+                const Text(
+                  'Our Computer Science 12 app does not collect, store, or share personal data. It provides educational notes and does not require sensitive device permissions.',
                   textAlign: TextAlign.justify,
-                  text: TextSpan(
-                    style: const TextStyle(
-                        color: Colors.black), // default text style
-                    children: [
-                      const TextSpan(
-                        text:
-                            'Our Computer Science 12 app does not collect, store, or share any personal information. It provides notes from public websites and does not need any permissions or access to your device. Some content comes from other websites, and they may have their own privacy policies. If we update this policy, changes will be posted here.\nFor any questions, contact us at ',
-                        style: TextStyle(
-                          fontSize: 12,
-                        ),
-                      ),
-                      TextSpan(
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                        text: "Mail Us.",
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () async {
-                            launchUrlString(mail);
-                          },
-                      ),
-                    ],
-                  ),
+                  style: TextStyle(fontSize: 13.5, height: 1.45),
                 ),
-                RichText(
+                const SizedBox(height: 10),
+                const Text(
+                  'Some learning content may reference external resources that follow their own privacy terms.',
                   textAlign: TextAlign.justify,
-                  text: TextSpan(
-                    style: const TextStyle(
-                        color: Colors.black), // default text style
-                    children: [
-                      const TextSpan(
-                        text:
-                            "\n\nIf you'd like to contribute to the app, you can do so through our ",
-                        style: TextStyle(
-                          fontSize: 12,
-                        ),
-                      ),
-                      TextSpan(
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                        text: "GitHub repository.",
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () async {
-                            launchUrlString(gitHub);
-                          },
-                      ),
-                    ],
-                  ),
+                  style: TextStyle(fontSize: 13.5, height: 1.45),
                 ),
-                RichText(
-                  textAlign: TextAlign.justify,
-                  text: TextSpan(
-                    style: const TextStyle(
-                        color: Colors.black), // default text style
-                    children: [
-                      const TextSpan(
-                        text: "\n\nFor more information about app visit ",
-                        style: TextStyle(
-                          fontSize: 12,
-                        ),
-                      ),
-                      TextSpan(
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                        text: "Websites.",
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () async {
-                            launchUrlString(website);
-                          },
-                      ),
-                    ],
-                  ),
+                const SizedBox(height: 12),
+                _policyLinkText(
+                  beforeText: 'For questions, contact us via ',
+                  linkText: 'Mail',
+                  url: mail,
+                ),
+                const SizedBox(height: 8),
+                _policyLinkText(
+                  beforeText: 'To contribute content, visit our ',
+                  linkText: 'GitHub repository',
+                  url: gitHub,
+                ),
+                const SizedBox(height: 8),
+                _policyLinkText(
+                  beforeText: 'For more details, check our ',
+                  linkText: 'website',
+                  url: website,
                 ),
               ],
             ),
@@ -110,11 +77,47 @@ class PrivacyPolicyProvider with ChangeNotifier {
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: const Text('Close'),
+              child: const Text(
+                'Close',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
           ],
         );
       },
+    );
+  }
+
+  Widget _policyLinkText({
+    required String beforeText,
+    required String linkText,
+    required String url,
+  }) {
+    return RichText(
+      textAlign: TextAlign.justify,
+      text: TextSpan(
+        style: const TextStyle(
+          color: Colors.black,
+          fontSize: 13.5,
+          height: 1.45,
+        ),
+        children: <InlineSpan>[
+          TextSpan(text: beforeText),
+          TextSpan(
+            text: linkText,
+            style: const TextStyle(
+              color: Color(0xff0F766E),
+              fontWeight: FontWeight.w600,
+              decoration: TextDecoration.underline,
+            ),
+            recognizer: TapGestureRecognizer()
+              ..onTap = () async {
+                await launchUrlString(url);
+              },
+          ),
+          const TextSpan(text: '.'),
+        ],
+      ),
     );
   }
 }

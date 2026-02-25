@@ -8,15 +8,19 @@ class ActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: CustomAppBar(
-        titleText: 'Computer Science',
+    return Scaffold(
+      appBar: const CustomAppBar(titleText: 'Computer Science Notes'),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: <Color>[Color(0xffE8F5F4), Color(0xffF7FCFC)],
+          ),
+        ),
+        child: const SizedBox(child: TopicsList()),
       ),
-      body: SizedBox(
-        child: TopicsList(),
-      ),
-      backgroundColor: Color.fromARGB(130, 173, 223, 241),
-      drawer: CustomDrawerComponent(),
+      drawer: const CustomDrawerComponent(),
     );
   }
 }

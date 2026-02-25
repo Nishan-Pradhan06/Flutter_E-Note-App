@@ -10,34 +10,35 @@ class CustomDrawerHeader extends StatelessWidget {
         'Computer Science',
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 15,
+          color: Colors.white,
+          fontSize: 16,
           fontWeight: FontWeight.bold,
         ),
       ),
       accountEmail: const Text(
-        'Grade 12 New Curriculam Course Notes',
+        'Grade 12 New Curriculum Notes',
         style: TextStyle(
-          fontSize: 15,
-          fontWeight: FontWeight.bold,
+          color: Color(0xffDFFAF5),
+          fontSize: 13,
+          fontWeight: FontWeight.w500,
         ),
-        selectionColor: Colors.black,
       ),
       currentAccountPicture: CircleAvatar(
+        backgroundColor: Colors.white,
         child: ClipOval(
           child: Image.asset(
             'images/appLogo.png',
-            width: 95,
-            height: 95,
+            width: 82,
+            height: 82,
+            fit: BoxFit.cover,
           ),
         ),
       ),
       decoration: const BoxDecoration(
-        color: Colors.lightBlue,
-        image: DecorationImage(
-          image: NetworkImage(
-            'https://images.unsplash.com/photo-1635350181304-be3f00f5af76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-          ),
-          fit: BoxFit.cover,
+        gradient: LinearGradient(
+          colors: <Color>[Color(0xff0F766E), Color(0xff115E59)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
       ),
     );

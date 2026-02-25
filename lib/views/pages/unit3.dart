@@ -11,9 +11,7 @@ class WebDevelopment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(
-        titleText: 'Unit 3',
-      ),
+      appBar: const CustomAppBar(titleText: 'Unit 3'),
       body: PageView(
         children: [
           GestureDetector(
@@ -28,12 +26,8 @@ class WebDevelopment extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
-                        const TopicsHeadings(
-                          unit: 'Web Technology',
-                        ),
-                        const SizedBox(
-                          height: 16.0,
-                        ),
+                        const TopicsHeadings(unit: 'Web Technology'),
+                        const SizedBox(height: 16.0),
                         ChapterTopics(
                           heading:
                               'Web technology with Server side and client side programming',
@@ -43,29 +37,25 @@ class WebDevelopment extends StatelessWidget {
                               'Web technology is the tools and techniques which enables two or more computing devices to communicate over a network i.e. Internet. Web Technology consist of two words, the web refers to the World Wide Web generally known as World Wide Web. WWW is the cyber space containing webpages, documents, and any other resources which are identified and located with the help of their URLs. Technology refers to the tools and techniques that makes these resources available on the Web such as, web browsers to view content of web, Programming languages and frameworks for the development of websites, Database to store data at back end, protocols for communicating on the web, multimedia elements etc.\n\nWeb development is the process of designing and developing website which are hosted through internet or intranet. The process of developing web can range from developing static page to a complex such as web based application social media sites, E-commerce. Web development includes web design, web content development, client side scripting, server side scripting, web engineering etc. Since, web development consists of several inter-related task which can be accomplish by different types of developer who focuses on different aspect of web creation. ',
                         ),
                         Image.asset("images/unit_3/html.jpg"),
-                        const SizedBox(
-                          height: 8,
-                        ),
+                        const SizedBox(height: 8),
                         ChapterTopics(
                           heading: 'Server side and client side programming',
                         ),
-                        const ChapterHeadingMedium(
-                            medium_heading:
-                                'Client-Side Scripting programming'),
+                        ChapterHeadingMedium(
+                          medium_heading: 'Client-Side Scripting programming',
+                        ),
                         HeadingDetails(
                           contents:
                               'Client-side scripting is performed to generate a code that can run on the client side i.e (front end) browser without needing the server-side (back end) processing. Basically, client-side scripts are placed inside an HTML document. The client-side scripting can be used to layout the content of the web. For example, when a user makes a request through web browser for a webpage to the server, it just sent the HTML and CSS as plain text, and the browser interprets and renders the content of web in the client end (user). Client-side scripting is designed to run as a scripting language which can be executed by web browser. Front end developer is someone who design and develop client side of a website. Generally. he or she works in user interface (UI) of a website. Front end developer must be at least fluent in three different languages i.e. HTML, CSS, JavaScript whereas, there are several other libraries which can be used for front end development.',
                         ),
-                        const ChapterHeadingMedium(
-                            medium_heading:
-                                'Server-Side Scripting programming'),
+                        ChapterHeadingMedium(
+                          medium_heading: 'Server-Side Scripting programming',
+                        ),
                         HeadingDetails(
                           contents:
                               'Server-side scripting also known as back-end runs on the server where the application is hosted. Server-side is used to serve content depending upon the user request. Back end helps to create dynamic web based application that allows user to interact and communicate with the application. Back end language also helps to connect front end with data base. So that, User can store and retrieve data as per the requirement.  Back-end developer is responsible for server-side programming. Some of the popular server-side (back-end) scripting language are ASP, JavaScript (using SSJS (Server-side JavaScript e.g. node.js), Perl, PHP, Ruby, Python etc.\n\nClient-side scripting and server-side scripting both works along side. The client-side scripting emphasizes making the interface of the web application or website (UI) more appealing and functional. Whereas, server-side scripting emphasizes on data accessing methods, error handling and fast processing etc..\n\nNote: Full-stack developer understand both Front end and back end development process. They can accomplish entire project. Full stack developer must have expertise in client site and server site Scripting language. Moreover, he/she has a great knowledge of integrating database with the application.',
                         ),
-                        const SizedBox(
-                          height: 8.0,
-                        ),
+                        const SizedBox(height: 8.0),
                         ChapterTopics(
                           heading: 'How to add JavaScript in web pages?',
                         ),
@@ -85,72 +75,82 @@ class WebDevelopment extends StatelessWidget {
                               '- JS is used for client-side validation.\n- JS can be used to make dynamic drop-down menus.\n- JS can be used to display date, time and even clock.\n- JS can be used to generate pop-up windows, alert message, dialog box etc\n- JS can also be used for Server application.\n- JS can be used for cross platform mobile apps development.\n- JS can be used for game development.',
                         ),
                         ChapterTopics(
-                            heading: 'Adding JavaScript to HTML document'),
+                          heading: 'Adding JavaScript to HTML document',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'As we know, JS is often used as client-side scripting language along with HTML and CSS. Like we add CSS to our HTML document, similarly we can add our JavaScript code to HTML document in three several ways. The several ways of adding JavaScript to HTML document are:'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '1 .Inline JavaScript code'),
+                          contents:
+                              'As we know, JS is often used as client-side scripting language along with HTML and CSS. Like we add CSS to our HTML document, similarly we can add our JavaScript code to HTML document in three several ways. The several ways of adding JavaScript to HTML document are:',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '1 .Inline JavaScript code',
+                        ),
                         HeadingDetails(
                           contents:
                               'This is the method of adding JS code directly inside the HTML tag. We don’t have to create separate JS file or even we don’t have to place JS code with in script tag. Simple events like onclick, mouseover, keypress can easily be added through this method. But, its very much inconvenient to add large JS code inline. JavaScript code can be added in HTML document inline as follows:',
                         ),
                         Image.asset("images/unit_3/e1.png"),
                         HeadingDetails(
-                            contents:
-                                'Here, we have added alert message through onclick event. When user press the Click me button then alert message will be shown in the web browser.'),
-                        const SizedBox(
-                          height: 8.0,
+                          contents:
+                              'Here, we have added alert message through onclick event. When user press the Click me button then alert message will be shown in the web browser.',
                         ),
-                        const ChapterHeadingMedium(
-                            medium_heading:
-                                '2. Internal (Embedding) JavaScript code'),
+                        const SizedBox(height: 8.0),
+                        ChapterHeadingMedium(
+                          medium_heading:
+                              '2. Internal (Embedding) JavaScript code',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'This is the method of adding JS code within the HTML document. JS code is added internally with in the script tag inside body of the HTML document. JavaScript code can be embedded within HTML document as follows:'),
+                          contents:
+                              'This is the method of adding JS code within the HTML document. JS code is added internally with in the script tag inside body of the HTML document. JavaScript code can be embedded within HTML document as follows:',
+                        ),
                         Image.asset("images/unit_3/e2.png"),
                         HeadingDetails(
-                            contents:
-                                'Here, we have created a JS function named disp( ), this function is called when user press the Click me button. Once button is pressed alert message is displayed which is defined inside function within Script tag.'),
-                        const SizedBox(
-                          height: 8.0,
+                          contents:
+                              'Here, we have created a JS function named disp( ), this function is called when user press the Click me button. Once button is pressed alert message is displayed which is defined inside function within Script tag.',
                         ),
-                        const ChapterHeadingMedium(
-                            medium_heading: '3. External JavaScript file'),
+                        const SizedBox(height: 8.0),
+                        ChapterHeadingMedium(
+                          medium_heading: '3. External JavaScript file',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'This is the most popular methods of adding JS in our web pages. To add external JavaScript we have to create separate JS file which is linked with our HTML document as:'),
+                          contents:
+                              'This is the most popular methods of adding JS in our web pages. To add external JavaScript we have to create separate JS file which is linked with our HTML document as:',
+                        ),
                         Image.asset("images/unit_3/e3.png"),
                         HeadingDetails(
-                            contents:
-                                'Where, name.js is the JavaScript file that we create to write all our JS code. It should be in same location with our HTML document. It is most convenient way of adding JS in our web page as JS code don’t get messed with other HTML and CSS code. JavaScript code can be externally added with HTML document as follows:\n\nCreate a HTML document with any name'),
+                          contents:
+                              'Where, name.js is the JavaScript file that we create to write all our JS code. It should be in same location with our HTML document. It is most convenient way of adding JS in our web page as JS code don’t get messed with other HTML and CSS code. JavaScript code can be externally added with HTML document as follows:\n\nCreate a HTML document with any name',
+                        ),
                         Image.asset("images/unit_3/e4.png"),
                         HeadingDetails(
-                            contents:
-                                'Also create a JS file with .js extension and add following code'),
+                          contents:
+                              'Also create a JS file with .js extension and add following code',
+                        ),
                         Image.asset("images/unit_3/e5.png"),
                         HeadingDetails(
                           contents:
                               'Here, we have created separate HTML and JS file in same location. Since, we have linked our JS file with our HTML document, every code which is written in JS file will be implemented on HTML document.',
                         ),
-                        const SizedBox(
-                          height: 16.0,
-                        ),
+                        const SizedBox(height: 16.0),
                         ChapterTopics(
-                            heading: 'Local and global variable in JavaScript'),
+                          heading: 'Local and global variable in JavaScript',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'Variables are the identifiers which holds value during our program execution. These values may change throughout the program. Depending upon the nature of data variable can hold several type of value. The type of value stored in the variable are denoted by datatype. There are two types of datatypes used in JS.'),
+                          contents:
+                              'Variables are the identifiers which holds value during our program execution. These values may change throughout the program. Depending upon the nature of data variable can hold several type of value. The type of value stored in the variable are denoted by datatype. There are two types of datatypes used in JS.',
+                        ),
                         ChapterTopics(heading: 'Data types used in JavaScript'),
-                        const ChapterHeadingMedium(
-                            medium_heading: 'a) Primitive data type: '),
+                        ChapterHeadingMedium(
+                          medium_heading: 'a) Primitive data type: ',
+                        ),
                         HeadingDetails(
-                            contents: 'They are inbuilt datatype used in JS.'),
+                          contents: 'They are inbuilt datatype used in JS.',
+                        ),
                         Table(
                           border: TableBorder.all(),
                           columnWidths: const {
                             0: FixedColumnWidth(
-                                80), // Adjust the width of the first column
+                              80,
+                            ), // Adjust the width of the first column
                           },
                           children: const [
                             TableRow(
@@ -165,16 +165,16 @@ class WebDevelopment extends StatelessWidget {
                             ),
                             TableRow(
                               children: [
-                                TableCell(
-                                  child: Center(child: Text('Number')),
-                                ),
+                                TableCell(child: Center(child: Text('Number'))),
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          'It represents numeric values, including integers and floating-point numbers. BigInt can be used to represent numbers with large values.'),
+                                        'It represents numeric values, including integers and floating-point numbers. BigInt can be used to represent numbers with large values.',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -182,16 +182,16 @@ class WebDevelopment extends StatelessWidget {
                             ),
                             TableRow(
                               children: [
-                                TableCell(
-                                  child: Center(child: Text('String')),
-                                ),
+                                TableCell(child: Center(child: Text('String'))),
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          'It represent alphanumeric values i.e. text'),
+                                        'It represent alphanumeric values i.e. text',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -205,10 +205,12 @@ class WebDevelopment extends StatelessWidget {
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          'It represent either true or false value.'),
+                                        'It represent either true or false value.',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -216,16 +218,16 @@ class WebDevelopment extends StatelessWidget {
                             ),
                             TableRow(
                               children: [
-                                TableCell(
-                                  child: Center(child: Text('Null')),
-                                ),
+                                TableCell(child: Center(child: Text('Null'))),
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          ' It represent empty or unknown value.'),
+                                        ' It represent empty or unknown value.',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -239,10 +241,12 @@ class WebDevelopment extends StatelessWidget {
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          ' If variable is declared but the value is not assigned then the variable is of undefined type.'),
+                                        ' If variable is declared but the value is not assigned then the variable is of undefined type.',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -250,16 +254,19 @@ class WebDevelopment extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const ChapterHeadingMedium(
-                            medium_heading: 'b) Non-Primitive datatype:'),
+                        ChapterHeadingMedium(
+                          medium_heading: 'b) Non-Primitive datatype:',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'They are the derived datatypes from primitive datatype.'),
+                          contents:
+                              'They are the derived datatypes from primitive datatype.',
+                        ),
                         Table(
                           border: TableBorder.all(),
                           columnWidths: const {
                             0: FixedColumnWidth(
-                                80), // Adjust the width of the first column
+                              80,
+                            ), // Adjust the width of the first column
                           },
                           children: const [
                             TableRow(
@@ -274,16 +281,16 @@ class WebDevelopment extends StatelessWidget {
                             ),
                             TableRow(
                               children: [
-                                TableCell(
-                                  child: Center(child: Text('Array')),
-                                ),
+                                TableCell(child: Center(child: Text('Array'))),
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          ' It store multiple values of same type under a same name.'),
+                                        ' It store multiple values of same type under a same name.',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -297,10 +304,12 @@ class WebDevelopment extends StatelessWidget {
                                 TableCell(
                                   child: Padding(
                                     padding: EdgeInsets.all(
-                                        8.0), // Add padding to the right column
+                                      8.0,
+                                    ), // Add padding to the right column
                                     child: Center(
                                       child: Text(
-                                          '	 It has methods and properties.'),
+                                        '	 It has methods and properties.',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -310,22 +319,27 @@ class WebDevelopment extends StatelessWidget {
                         ),
                         ChapterTopics(heading: 'Variables in JavaScript'),
                         HeadingDetails(
-                            contents:
-                                ' Variables in JavaScript are declared by using keyword "var". for eg, \nvar a=3,b=4;\nvar fruit = "apple"; '),
+                          contents:
+                              ' Variables in JavaScript are declared by using keyword "var". for eg, \nvar a=3,b=4;\nvar fruit = "apple"; ',
+                        ),
                         ChapterTopics(
-                            heading: 'Types of variable in JavaScript'),
-                        const ChapterHeadingMedium(
-                            medium_heading: 'a) Local variable '),
+                          heading: 'Types of variable in JavaScript',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: 'a) Local variable ',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'Those variable which are declared inside the block or function is called local variable. Local variable can only be accessed and used within the block or function.'),
+                          contents:
+                              'Those variable which are declared inside the block or function is called local variable. Local variable can only be accessed and used within the block or function.',
+                        ),
                         Image.asset("images/unit_3/e6.png"),
                         HeadingDetails(
                           contents:
                               "In above example, the variable 'a' is declared inside the function disp(). So, it can be used only within the function block. Other function or block cannot use the value of 'a'. Hence, to overcome this limitation we have global variable.",
                         ),
-                        const ChapterHeadingMedium(
-                            medium_heading: 'b) Global variable'),
+                        ChapterHeadingMedium(
+                          medium_heading: 'b) Global variable',
+                        ),
                         HeadingDetails(
                           contents:
                               'Those variable which are declared outside the block or function is called global variable. Global variable can  be accessed and used within any other function or the block.',
@@ -337,82 +351,103 @@ class WebDevelopment extends StatelessWidget {
                         ),
                         ChapterTopics(heading: 'form validation in javascript'),
                         HeadingDetails(
-                            contents:
-                                'Once the client or user entered all the necessary data and  press the submit button then all the data entered by the client must be correct and valid. Thus, form validation is the mechanism which allows client to enter only the correct information which can be send to the server. JavaScript provides easy method for form validation at client side. Forma validation can be done in two ways: Basic validation which checks whether all the required fields are filled properly or not kept empty whereas, Data Format validation check whether the data entered into the form field are logically correct.'),
+                          contents:
+                              'Once the client or user entered all the necessary data and  press the submit button then all the data entered by the client must be correct and valid. Thus, form validation is the mechanism which allows client to enter only the correct information which can be send to the server. JavaScript provides easy method for form validation at client side. Forma validation can be done in two ways: Basic validation which checks whether all the required fields are filled properly or not kept empty whereas, Data Format validation check whether the data entered into the form field are logically correct.',
+                        ),
                         ChapterTopics(
                           heading: 'Basic form validation in JavaScript',
                         ),
                         Image.asset("images/unit_3/e8.png"),
                         ChapterTopics(heading: 'DDL DML and DCL with example'),
                         HeadingDetails(
-                            contents:
-                                'SQL stands for Structured Query Language. It is an international standard database query language introduced and developed by IBM in early 1970s. It was able to control relational database. SQL is not a complete programming language rather only used for communicating with database. SQL has several statement for data definition, data manipulation and data control generally known as DDL, DML and DCL respectively. A query is a request to a DBMS for the retrieval, modification, insertion and deletion of the data from database.'),
+                          contents:
+                              'SQL stands for Structured Query Language. It is an international standard database query language introduced and developed by IBM in early 1970s. It was able to control relational database. SQL is not a complete programming language rather only used for communicating with database. SQL has several statement for data definition, data manipulation and data control generally known as DDL, DML and DCL respectively. A query is a request to a DBMS for the retrieval, modification, insertion and deletion of the data from database.',
+                        ),
                         Image.asset("images/unit_3/sql.jpg"),
                         ChapterTopics(heading: 'DDL DML and DCL statements'),
-                        const ChapterHeadingMedium(
-                            medium_heading:
-                                '1) Data Definition Language (DDL)'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '1.1 CREATE statement'),
+                        ChapterHeadingMedium(
+                          medium_heading: '1) Data Definition Language (DDL)',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '1.1 CREATE statement',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'In order to create a database we can use CREATE statement as follows:'),
+                          contents:
+                              'In order to create a database we can use CREATE statement as follows:',
+                        ),
                         Image.asset("images/unit_3/e9.png"),
                         HeadingDetails(
-                            contents:
-                                'The above statement will create a database with the name student.\nIn order to create a database table we can use CREATE statement as follows:'),
+                          contents:
+                              'The above statement will create a database with the name student.\nIn order to create a database table we can use CREATE statement as follows:',
+                        ),
                         Image.asset("images/unit_3/e10.png"),
                         HeadingDetails(
-                            contents:
-                                'The above statement will create a database table named student with two column SN and Fname. The number of column can be increased accordingly.'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '1.2 DROP statement'),
+                          contents:
+                              'The above statement will create a database table named student with two column SN and Fname. The number of column can be increased accordingly.',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '1.2 DROP statement',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'It is used to delete database or table from the SQL server.'),
+                          contents:
+                              'It is used to delete database or table from the SQL server.',
+                        ),
                         Image.asset("images/unit_3/e11.png"),
                         HeadingDetails(
-                            contents:
-                                'This statement will delete database named student from the SQL server.'),
+                          contents:
+                              'This statement will delete database named student from the SQL server.',
+                        ),
                         Image.asset("images/unit_3/e12.png"),
                         HeadingDetails(
-                            contents:
-                                'This statement will delete database table named student from the SQL server.'),
-                        const ChapterHeadingMedium(
-                            medium_heading:
-                                '2) Data Manipulation Language (DML)'),
+                          contents:
+                              'This statement will delete database table named student from the SQL server.',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '2) Data Manipulation Language (DML)',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'DML is related with manipulation of records such as retrieval, sorting, displaying and deleting records or data. It helps user to submit query and display report of the table. It provide technique for processing the database. It includes commands like SELECT, INSERT, DELETE and UPDATE to manipulate the information stored in the database.'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '2.1) SELECT statement'),
+                          contents:
+                              'DML is related with manipulation of records such as retrieval, sorting, displaying and deleting records or data. It helps user to submit query and display report of the table. It provide technique for processing the database. It includes commands like SELECT, INSERT, DELETE and UPDATE to manipulate the information stored in the database.',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '2.1) SELECT statement',
+                        ),
                         Image.asset("images/unit_3/e13.png"),
                         HeadingDetails(
-                            contents:
-                                'This statement will select all the columns from the database table named student.'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '2.2) INSERT statement'),
+                          contents:
+                              'This statement will select all the columns from the database table named student.',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '2.2) INSERT statement',
+                        ),
                         Image.asset("images/unit_3/e14.png"),
                         HeadingDetails(
-                            contents:
-                                'The above statement will insert 3 and Ram into the database table named student.'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '2.3) DELETE statement'),
+                          contents:
+                              'The above statement will insert 3 and Ram into the database table named student.',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '2.3) DELETE statement',
+                        ),
                         Image.asset("images/unit_3/e15.png"),
                         HeadingDetails(
-                            contents:
-                                "This statement will delete all the records from the student table where the Fname value is 'Ram'."),
-                        const ChapterHeadingMedium(
-                            medium_heading: '2.4) UPDATE statement'),
+                          contents:
+                              "This statement will delete all the records from the student table where the Fname value is 'Ram'.",
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '2.4) UPDATE statement',
+                        ),
                         Image.asset("images/unit_3/e16.png"),
                         HeadingDetails(
-                            contents:
-                                'This stament will update the update the table record whose fname is "Ram".'),
-                        const ChapterHeadingMedium(
-                            medium_heading: '3) Data Control Language (DCL)'),
+                          contents:
+                              'This stament will update the update the table record whose fname is "Ram".',
+                        ),
+                        ChapterHeadingMedium(
+                          medium_heading: '3) Data Control Language (DCL)',
+                        ),
                         HeadingDetails(
-                            contents:
-                                'DCL provides additional feature for security of table and database. It includes commands for controlling data and access to the database. Some of the example of this command are GRANT, COMMIT etc.'),
+                          contents:
+                              'DCL provides additional feature for security of table and database. It includes commands for controlling data and access to the database. Some of the example of this command are GRANT, COMMIT etc.',
+                        ),
                         const Footer(),
                       ],
                     ),
@@ -420,7 +455,7 @@ class WebDevelopment extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
       //  bottomNavigationBar: const BannerAdHelper(),

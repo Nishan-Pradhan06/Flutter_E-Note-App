@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575357325042",
+    "project_id": "computer-science-530a4",
+    "storage_bucket": "computer-science-530a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575357325042:android:a5bd79bfeee48aa804ca6b",
+        "android_client_info": {
+          "package_name": "com.nishanpradhan.notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYTmjJJ2LyUsCTRoi7W1qA-aAPKCeePhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

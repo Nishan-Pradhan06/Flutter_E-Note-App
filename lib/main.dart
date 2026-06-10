@@ -1,3 +1,5 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:lottie/lottie.dart';
@@ -24,6 +26,10 @@ Future<void> main() async {
     debugPrintStack(stackTrace: st);
     // fallback keeps app running; onboarding will use in-memory flag
   }
+  await Firebase.initializeApp();
+
+  // Force enable even in debug
+  await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
   runApp(MyApp(prefs: prefs, seenOnboarding: seenOnboarding));
 }
 

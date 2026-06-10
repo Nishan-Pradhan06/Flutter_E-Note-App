@@ -22,6 +22,8 @@ dependencies:
   provider: ^6.1.2
   rebrand_cli: ^1.0.3
   firebase_analytics: ^12.4.2
+  firebase_crashlytics: ^5.2.3
+  firebase_core: ^4.10.0
 
 dev_dependencies:
   flutter_test:

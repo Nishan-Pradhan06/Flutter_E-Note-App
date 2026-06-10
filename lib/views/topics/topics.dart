@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../ad/native_ad.dart';
 import '../../data/study_content.dart';
 import '../../providers/study_center_provider.dart';
 import '../../providers/onboarding_provider.dart';
@@ -210,7 +211,8 @@ class _TopicsListState extends State<TopicsList> {
         ),
       );
     } else {
-      for (final TopicEntry topic in topics) {
+      for (int i = 0; i < topics.length; i++) {
+        final TopicEntry topic = topics[i];
         final bool isBookmarked = studyProvider.bookmarkedTopics.contains(
           topic.id,
         );
@@ -319,6 +321,14 @@ class _TopicsListState extends State<TopicsList> {
             ),
           ),
         );
+        if ((i + 1) % 3 == 0) {
+          contentWidgets.add(
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 8),
+              child: NativeAdWidget(),
+            ),
+          );
+        }
       }
     }
 

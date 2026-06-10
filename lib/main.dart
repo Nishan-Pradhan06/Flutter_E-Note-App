@@ -30,10 +30,17 @@ Future<void> main() async {
   await Firebase.initializeApp();
   MobileAds.instance.initialize();
 
+  MobileAds.instance.updateRequestConfiguration(
+    RequestConfiguration(
+      testDeviceIds: [
+        '67C8D413D2298AB432F08012E705A714',
+      ], // your device ID from logs
+    ),
+  );
+
   // Force enable even in debug
   await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
 
-  
   runApp(MyApp(prefs: prefs, seenOnboarding: seenOnboarding));
 }
 

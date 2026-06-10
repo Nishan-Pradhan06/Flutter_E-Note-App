@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../service/banner_ad.dart';
+import '../ad/banner_ad.dart';
 import 'components/app_bar.dart';
 import 'components/custom_drawer.dart';
 import 'topics/topics.dart';

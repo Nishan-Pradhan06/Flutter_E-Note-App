@@ -18,23 +18,32 @@ To run this project on your local machine, make sure you have Flutter installed.
 
    ```bash
    git clone https://github.com/Nishan-Pradhan06/Flutter_E-Note-App.git
+   ```
+
 2. **Navigate to the Project Directory:**
    ```bash
    cd Flutter_E-Note-App
+   ```
 3. **Install Dependencies:**
    ```bash
    flutter pub get
+   ```
 4. **Run the Application::**
    ```bash
    flutter run
+   ```
+
 ## Project Structure
+
 The project is organized into the following directories:
 
 - lib/: Contains the Dart code for the DigitalNote app.
 - android/: Android-specific configurations and files.
 - ios/: iOS-specific configurations and files.
 - test/: Tests for the application.
+
 ## Contributing
+
 We welcome contributions! If you'd like to enhance this DigitalNote app, please follow these steps:
 
 - Fork the repository.
@@ -42,14 +51,23 @@ We welcome contributions! If you'd like to enhance this DigitalNote app, please 
 - Commit your changes: git commit -m 'Add some fooBar'
 - Push to the branch: git push origin feature/fooBar
 - Create a Pull Request.
+
 ## Support
+
 For any queries or issues, please open an issue on the [GitHub repository](https://github.com/Nishan-Pradhan06/Flutter_E-Note-App).
 
 ## License
+
 This project is licensed under the MIT License.
 
 Thank you for your interest and contributions! Together, let's make learning computer science an engaging and enriching experience.
 
+<!-- BANNER AD -->
 
 app ID: ca-app-pub-1749269015054154~8876603840
 ad unit id:ca-app-pub-1749269015054154/9639021176
+
+<!-- NATIVE AD -->
+
+APP ID:ca-app-pub-1749269015054154~8876603840
+AD UNIT ID:ca-app-pub-1749269015054154/9157515300

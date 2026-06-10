@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../service/banner_ad.dart';
 import 'components/app_bar.dart';
 import 'components/custom_drawer.dart';
 import 'topics/topics.dart';
@@ -19,6 +20,10 @@ class ActionButton extends StatelessWidget {
           ),
         ),
         child: const SizedBox(child: TopicsList()),
+      ),
+      bottomNavigationBar: SizedBox(
+        height: MediaQuery.sizeOf(context).height * 0.1,
+        child: const BannerAdWidget(),
       ),
       drawer: const CustomDrawerComponent(),
     );

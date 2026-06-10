@@ -49,3 +49,7 @@ For any queries or issues, please open an issue on the [GitHub repository](https
 This project is licensed under the MIT License.
 
 Thank you for your interest and contributions! Together, let's make learning computer science an engaging and enriching experience.
+
+
+app ID: ca-app-pub-1749269015054154~8876603840
+ad unit id:ca-app-pub-1749269015054154/9639021176

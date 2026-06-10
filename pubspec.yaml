@@ -24,6 +24,7 @@ dependencies:
   firebase_analytics: ^12.4.2
   firebase_crashlytics: ^5.2.3
   firebase_core: ^4.10.0
+  google_mobile_ads: ^9.0.0
 
 dev_dependencies:
   flutter_test:

@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
@@ -27,9 +28,12 @@ Future<void> main() async {
     // fallback keeps app running; onboarding will use in-memory flag
   }
   await Firebase.initializeApp();
+  MobileAds.instance.initialize();
 
   // Force enable even in debug
   await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+
+  
   runApp(MyApp(prefs: prefs, seenOnboarding: seenOnboarding));
 }
 
